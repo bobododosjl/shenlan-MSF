@@ -1,0 +1,1 @@
+/home/bobododo/GNC/MSF/chapter6/catkin_ws/devel/./cmake.lock 4
