@@ -1,0 +1,343 @@
+[  0%] Built target tf_generate_messages_nodejs
+[  0%] Built target tf2_msgs_generate_messages_nodejs
+[  0%] Built target tf2_msgs_generate_messages_cpp
+[  0%] Built target tf2_msgs_generate_messages_py
+[  0%] Built target actionlib_generate_messages_py
+[  0%] Built target actionlib_generate_messages_cpp
+[  0%] Built target _lidar_localization_generate_messages_check_deps_PosVelMag
+[  0%] Built target _lidar_localization_generate_messages_check_deps_optimizeMap
+[  0%] Built target _lidar_localization_generate_messages_check_deps_PosVel
+[  0%] Built target _lidar_localization_generate_messages_check_deps_IMUGNSSMeasurement
+[  0%] Built target _lidar_localization_generate_messages_check_deps_LidarMeasurement
+[  0%] Built target _lidar_localization_generate_messages_check_deps_ESKFStd
+[  0%] Built target _lidar_localization_generate_messages_check_deps_saveMap
+[  0%] Built target nav_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target _lidar_localization_generate_messages_check_deps_saveOdometry
+[  0%] Built target _lidar_localization_generate_messages_check_deps_saveScanContext
+[  0%] Built target _lidar_localization_generate_messages_check_deps_EKFStd
+[  2%] Built target lidar_localization_generate_messages_cpp
+[  2%] Built target tf2_msgs_generate_messages_eus
+[  2%] Built target nav_msgs_generate_messages_eus
+[  2%] Built target sensor_msgs_generate_messages_nodejs
+[  2%] Built target roscpp_generate_messages_cpp
+[  2%] Built target sensor_msgs_generate_messages_lisp
+[  2%] Built target geometry_msgs_generate_messages_py
+[  2%] Built target geometry_msgs_generate_messages_lisp
+[  2%] Built target actionlib_generate_messages_lisp
+[  2%] Built target std_msgs_generate_messages_nodejs
+[  2%] Built target bond_generate_messages_lisp
+[  2%] Built target sensor_msgs_generate_messages_eus
+[  2%] Built target nav_msgs_generate_messages_nodejs
+[  2%] Built target sensor_msgs_generate_messages_py
+[  2%] Built target nodelet_generate_messages_py
+[  2%] Built target geometry_msgs_generate_messages_nodejs
+[  2%] Built target std_srvs_generate_messages_eus
+[  2%] Built target roscpp_generate_messages_lisp
+[  2%] Built target bond_generate_messages_eus
+[  2%] Built target std_msgs_generate_messages_lisp
+[  2%] Built target roscpp_generate_messages_nodejs
+[  2%] Built target geometry_msgs_generate_messages_eus
+[  2%] Built target std_msgs_generate_messages_py
+[  2%] Built target roscpp_generate_messages_py
+[  2%] Built target rosgraph_msgs_generate_messages_cpp
+[  2%] Built target tf_generate_messages_py
+[  2%] Built target dynamic_reconfigure_generate_messages_cpp
+[  2%] Built target topic_tools_generate_messages_cpp
+[  2%] Built target std_srvs_generate_messages_cpp
+[  2%] Built target rosgraph_msgs_generate_messages_eus
+[  2%] Built target rosgraph_msgs_generate_messages_lisp
+[  2%] Built target std_msgs_generate_messages_eus
+[  2%] Built target rosgraph_msgs_generate_messages_nodejs
+[  2%] Built target roscpp_generate_messages_eus
+[  2%] Built target rosgraph_msgs_generate_messages_py
+[  2%] Built target actionlib_msgs_generate_messages_eus
+[  2%] Built target nodelet_generate_messages_lisp
+[  2%] Built target actionlib_msgs_generate_messages_lisp
+[  2%] Built target actionlib_msgs_generate_messages_py
+[  2%] Built target pcl_ros_gencfg
+[  2%] Built target topic_tools_generate_messages_nodejs
+[  2%] Built target dynamic_reconfigure_generate_messages_eus
+[  2%] Built target dynamic_reconfigure_generate_messages_lisp
+[  2%] Built target pcl_msgs_generate_messages_cpp
+[  2%] Built target dynamic_reconfigure_generate_messages_nodejs
+[  2%] Built target dynamic_reconfigure_generate_messages_py
+[  2%] Built target tf2_msgs_generate_messages_lisp
+[  2%] Built target nav_msgs_generate_messages_py
+[  2%] Built target dynamic_reconfigure_gencfg
+[  2%] Built target nodelet_generate_messages_cpp
+[  2%] Built target bond_generate_messages_py
+[  2%] Built target std_srvs_generate_messages_nodejs
+[  2%] Built target nodelet_generate_messages_eus
+[  2%] Built target nodelet_generate_messages_nodejs
+[  2%] Built target nav_msgs_generate_messages_lisp
+[  2%] Built target pcl_msgs_generate_messages_nodejs
+[  2%] Built target bond_generate_messages_cpp
+[  2%] Built target actionlib_msgs_generate_messages_cpp
+[  2%] Built target tf_generate_messages_eus
+[  2%] Built target bond_generate_messages_nodejs
+[  2%] Built target actionlib_msgs_generate_messages_nodejs
+[  2%] Built target topic_tools_generate_messages_py
+[  2%] Built target nodelet_topic_tools_gencfg
+[  2%] Built target std_srvs_generate_messages_lisp
+[  2%] Built target topic_tools_generate_messages_lisp
+[  2%] Built target pcl_msgs_generate_messages_eus
+[  2%] Built target topic_tools_generate_messages_eus
+[  2%] Built target actionlib_generate_messages_eus
+[  2%] Built target pcl_msgs_generate_messages_py
+[  2%] Built target std_srvs_generate_messages_py
+[  2%] Built target actionlib_generate_messages_nodejs
+[  2%] Built target pcl_msgs_generate_messages_lisp
+[  2%] Built target tf_generate_messages_cpp
+[  2%] Built target tf_generate_messages_lisp
+[35m[1mConsolidate compiler generated dependencies of target gnss_ins_sim_filtering_node[0m
+[ 10%] Built target gnss_ins_sim_filtering_node
+[35m[1mConsolidate compiler generated dependencies of target eskf_preprocess_node[0m
+[ 19%] Built target eskf_preprocess_node
+[35m[1mConsolidate compiler generated dependencies of target viewer_node[0m
+[ 28%] Built target viewer_node
+[35m[1mConsolidate compiler generated dependencies of target test_frame_node[0m
+[ 36%] Built target test_frame_node
+[35m[1mConsolidate compiler generated dependencies of target gnss_ins_sim_preprocess_node[0m
+[ 44%] Built target gnss_ins_sim_preprocess_node
+[35m[1mConsolidate compiler generated dependencies of target kitti_filtering_node[0m
+[ 53%] Built target kitti_filtering_node
+[35m[1mConsolidate compiler generated dependencies of target data_pretreat_node[0m
+[ 61%] Built target data_pretreat_node
+[ 62%] Built target lidar_localization_generate_messages_py
+[ 64%] Built target lidar_localization_generate_messages_nodejs
+[ 65%] Built target lidar_localization_generate_messages_lisp
+[ 66%] Built target lidar_localization_generate_messages_eus
+[ 66%] Built target lidar_localization_generate_messages
+[35m[1mConsolidate compiler generated dependencies of target loop_closing_node[0m
+[ 75%] Built target loop_closing_node
+[35m[1mConsolidate compiler generated dependencies of target lidar_preprocess_node[0m
+[ 83%] Built target lidar_preprocess_node
+[35m[1mConsolidate compiler generated dependencies of target front_end_node[0m
+[ 91%] Built target front_end_node
+[35m[1mConsolidate compiler generated dependencies of target back_end_node[0m
+[100%] Built target back_end_node
+[36mInstall the project...[0m
+-- Install configuration: "Release"
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/_setup_util.py
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/env.sh
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/setup.bash
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/local_setup.bash
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/setup.sh
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/local_setup.sh
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/setup.zsh
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/local_setup.zsh
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/.rosinstall
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/msg/IMUGNSSMeasurement.msg
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/msg/LidarMeasurement.msg
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/msg/ESKFStd.msg
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/msg/EKFStd.msg
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/msg/PosVel.msg
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/msg/PosVelMag.msg
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/srv/saveScanContext.srv
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/srv/saveMap.srv
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/srv/optimizeMap.srv
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/srv/saveOdometry.srv
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/cmake/lidar_localization-msg-paths.cmake
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/saveScanContextResponse.h
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/PosVelMag.h
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/saveMap.h
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/saveScanContext.h
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/ESKFStd.h
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/LidarMeasurement.h
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/saveMapResponse.h
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/EKFStd.h
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/saveOdometryResponse.h
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/PosVel.h
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/saveMapRequest.h
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/saveOdometry.h
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/saveOdometryRequest.h
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/optimizeMapRequest.h
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/saveScanContextRequest.h
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/optimizeMap.h
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/optimizeMapResponse.h
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/IMUGNSSMeasurement.h
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/roseus/ros/lidar_localization
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/roseus/ros/lidar_localization/msg
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/roseus/ros/lidar_localization/msg/PosVelMag.l
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/roseus/ros/lidar_localization/msg/PosVel.l
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/roseus/ros/lidar_localization/msg/LidarMeasurement.l
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/roseus/ros/lidar_localization/msg/IMUGNSSMeasurement.l
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/roseus/ros/lidar_localization/msg/ESKFStd.l
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/roseus/ros/lidar_localization/msg/EKFStd.l
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/roseus/ros/lidar_localization/srv
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/roseus/ros/lidar_localization/srv/saveScanContext.l
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/roseus/ros/lidar_localization/srv/optimizeMap.l
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/roseus/ros/lidar_localization/srv/saveOdometry.l
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/roseus/ros/lidar_localization/srv/saveMap.l
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/roseus/ros/lidar_localization/manifest.l
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/msg
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/msg/_package.lisp
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/msg/_package_IMUGNSSMeasurement.lisp
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/msg/LidarMeasurement.lisp
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/msg/_package_EKFStd.lisp
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/msg/_package_LidarMeasurement.lisp
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/msg/ESKFStd.lisp
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/msg/IMUGNSSMeasurement.lisp
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/msg/PosVelMag.lisp
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/msg/lidar_localization-msg.asd
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/msg/_package_PosVelMag.lisp
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/msg/PosVel.lisp
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/msg/_package_ESKFStd.lisp
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/msg/EKFStd.lisp
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/msg/_package_PosVel.lisp
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/srv
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/srv/_package.lisp
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/srv/_package_saveScanContext.lisp
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/srv/saveScanContext.lisp
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/srv/_package_saveOdometry.lisp
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/srv/_package_saveMap.lisp
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/srv/optimizeMap.lisp
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/srv/saveOdometry.lisp
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/srv/_package_optimizeMap.lisp
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/srv/saveMap.lisp
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/common-lisp/ros/lidar_localization/srv/lidar_localization-srv.asd
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/gennodejs/ros/lidar_localization
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/gennodejs/ros/lidar_localization/msg
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/gennodejs/ros/lidar_localization/msg/EKFStd.js
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/gennodejs/ros/lidar_localization/msg/IMUGNSSMeasurement.js
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/gennodejs/ros/lidar_localization/msg/_index.js
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/gennodejs/ros/lidar_localization/msg/PosVel.js
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/gennodejs/ros/lidar_localization/msg/PosVelMag.js
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/gennodejs/ros/lidar_localization/msg/LidarMeasurement.js
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/gennodejs/ros/lidar_localization/msg/ESKFStd.js
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/gennodejs/ros/lidar_localization/srv
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/gennodejs/ros/lidar_localization/srv/saveMap.js
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/gennodejs/ros/lidar_localization/srv/_index.js
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/gennodejs/ros/lidar_localization/srv/saveOdometry.js
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/gennodejs/ros/lidar_localization/srv/optimizeMap.js
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/gennodejs/ros/lidar_localization/srv/saveScanContext.js
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/gennodejs/ros/lidar_localization/_index.js
+Listing /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/devel/.private/lidar_localization/lib/python2.7/dist-packages/lidar_localization ...
+Compiling /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/devel/.private/lidar_localization/lib/python2.7/dist-packages/lidar_localization/__init__.py ...
+Listing /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/devel/.private/lidar_localization/lib/python2.7/dist-packages/lidar_localization/msg ...
+Compiling /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/devel/.private/lidar_localization/lib/python2.7/dist-packages/lidar_localization/msg/_EKFStd.py ...
+Compiling /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/devel/.private/lidar_localization/lib/python2.7/dist-packages/lidar_localization/msg/_ESKFStd.py ...
+Compiling /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/devel/.private/lidar_localization/lib/python2.7/dist-packages/lidar_localization/msg/_IMUGNSSMeasurement.py ...
+Compiling /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/devel/.private/lidar_localization/lib/python2.7/dist-packages/lidar_localization/msg/_LidarMeasurement.py ...
+Compiling /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/devel/.private/lidar_localization/lib/python2.7/dist-packages/lidar_localization/msg/_PosVel.py ...
+Compiling /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/devel/.private/lidar_localization/lib/python2.7/dist-packages/lidar_localization/msg/_PosVelMag.py ...
+Compiling /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/devel/.private/lidar_localization/lib/python2.7/dist-packages/lidar_localization/msg/__init__.py ...
+Listing /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/devel/.private/lidar_localization/lib/python2.7/dist-packages/lidar_localization/srv ...
+Compiling /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/devel/.private/lidar_localization/lib/python2.7/dist-packages/lidar_localization/srv/__init__.py ...
+Compiling /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/devel/.private/lidar_localization/lib/python2.7/dist-packages/lidar_localization/srv/_optimizeMap.py ...
+Compiling /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/devel/.private/lidar_localization/lib/python2.7/dist-packages/lidar_localization/srv/_saveMap.py ...
+Compiling /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/devel/.private/lidar_localization/lib/python2.7/dist-packages/lidar_localization/srv/_saveOdometry.py ...
+Compiling /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/devel/.private/lidar_localization/lib/python2.7/dist-packages/lidar_localization/srv/_saveScanContext.py ...
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/msg
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/msg/_ESKFStd.py
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/msg/_PosVel.py
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/msg/_PosVelMag.py
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/msg/_LidarMeasurement.py
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/msg/_IMUGNSSMeasurement.pyc
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/msg/__init__.py
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/msg/_ESKFStd.pyc
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/msg/__init__.pyc
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/msg/_IMUGNSSMeasurement.py
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/msg/_PosVelMag.pyc
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/msg/_LidarMeasurement.pyc
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/msg/_EKFStd.pyc
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/msg/_PosVel.pyc
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/msg/_EKFStd.py
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/srv
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/srv/_optimizeMap.pyc
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/srv/_saveMap.pyc
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/srv/_saveOdometry.pyc
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/srv/_saveScanContext.py
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/srv/_saveScanContext.pyc
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/srv/__init__.py
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/srv/_saveOdometry.py
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/srv/__init__.pyc
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/srv/_optimizeMap.py
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/srv/_saveMap.py
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/__init__.py
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/python2.7/dist-packages/lidar_localization/__init__.pyc
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/pkgconfig/lidar_localization.pc
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/cmake/lidar_localization-msg-extras.cmake
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/cmake/lidar_localizationConfig.cmake
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/cmake/lidar_localizationConfig-version.cmake
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/package.xml
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/lidar_localization/test_frame_node
+-- Set runtime path of "/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/lidar_localization/test_frame_node" to ""
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/lidar_localization/data_pretreat_node
+-- Set runtime path of "/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/lidar_localization/data_pretreat_node" to ""
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/lidar_localization/lidar_preprocess_node
+-- Set runtime path of "/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/lidar_localization/lidar_preprocess_node" to ""
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/lidar_localization/eskf_preprocess_node
+-- Set runtime path of "/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/lidar_localization/eskf_preprocess_node" to ""
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/lidar_localization/gnss_ins_sim_preprocess_node
+-- Set runtime path of "/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/lidar_localization/gnss_ins_sim_preprocess_node" to ""
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/lidar_localization/front_end_node
+-- Set runtime path of "/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/lidar_localization/front_end_node" to ""
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/lidar_localization/back_end_node
+-- Set runtime path of "/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/lidar_localization/back_end_node" to ""
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/lidar_localization/loop_closing_node
+-- Set runtime path of "/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/lidar_localization/loop_closing_node" to ""
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/lidar_localization/viewer_node
+-- Set runtime path of "/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/lidar_localization/viewer_node" to ""
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/lidar_localization/kitti_filtering_node
+-- Set runtime path of "/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/lidar_localization/kitti_filtering_node" to ""
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/lidar_localization/gnss_ins_sim_filtering_node
+-- Set runtime path of "/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/lib/lidar_localization/gnss_ins_sim_filtering_node" to ""
+-- Up-to-date: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/global_defination
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/publisher
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/subscriber
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/tools
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/models
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/models/cloud_filter
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/models/scan_context_manager
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/models/scan_context_manager/key_frames.pb.h
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/models/scan_context_manager/ring_keys.pb.h
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/models/scan_context_manager/scan_contexts.pb.h
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/models/registration
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/models/graph_optimizer
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/models/graph_optimizer/g2o
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/models/graph_optimizer/g2o/edge
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/models/kalman_filter
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/models/scan_adjust
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/models/mag_table
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/mapping
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/mapping/loop_closing
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/mapping/viewer
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/mapping/back_end
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/mapping/front_end
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/tf_listener
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/data_pretreat
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/filtering
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/include/lidar_localization/lidar_localization/sensor_data
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/launch
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/launch/test_frame.launch
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/launch/kitti_localization.launch
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/launch/gnss_ins_sim_localization.launch
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/launch/mapping.launch
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/launch/matching.launch
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/launch/mapping_with_aloam.launch
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/config
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/config/scan_context
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/config/mapping
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/config/mapping/viewer.yaml
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/config/mapping/back_end.yaml
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/config/mapping/loop_closing.yaml
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/config/mapping/front_end.yaml
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/config/filtering
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/config/filtering/gnss_ins_sim_filtering.yaml
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/config/filtering/kitti_filtering.yaml
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/rviz
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/rviz/filtering.rviz
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/rviz/eskf_analysis.rviz
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/rviz/gnss_ins_sim_localization.rviz
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/rviz/display_bag.rviz
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/rviz/test_frame.rviz
+-- Installing: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/install/share/lidar_localization/rviz/mapping.rviz

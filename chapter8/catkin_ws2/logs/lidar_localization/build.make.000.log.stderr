@@ -1,0 +1,99 @@
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:62:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t declination_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:80:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t inclination_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:98:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t strength_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:62:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t declination_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:80:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t inclination_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:98:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t strength_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:62:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t declination_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:80:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t inclination_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:98:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t strength_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:62:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t declination_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:80:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t inclination_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:98:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t strength_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:62:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t declination_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:80:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t inclination_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:98:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t strength_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:62:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t declination_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:80:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t inclination_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:98:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t strength_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:62:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t declination_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:80:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t inclination_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:98:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t strength_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:62:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t declination_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:80:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t inclination_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:98:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t strength_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:62:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t declination_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:80:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t inclination_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:98:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t strength_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:62:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t declination_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:80:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t inclination_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:98:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t strength_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:62:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t declination_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:80:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t inclination_table[13][37] = \
+ [01;35m[K^[m[K
+[01m[K/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/src/models/mag_table/geo_mag_declination.cpp:98:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K-Wcomment[m[K]
+ [01;35m[K/[m[K/ static constexpr const int8_t strength_table[13][37] = \
+ [01;35m[K^[m[K

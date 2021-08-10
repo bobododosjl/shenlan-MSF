@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -O3 -Wall -shared -Wl,-soname,libgtest.so -o libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o   -L/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/build/lidar_localization/gtest/googlemock/gtest/src  -Wl,-rpath,/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/build/lidar_localization/gtest/googlemock/gtest/src -lpthread 

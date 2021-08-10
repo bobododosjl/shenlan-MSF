@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/src/lidar_localization/cmake-build-debug/devel/setup.sh

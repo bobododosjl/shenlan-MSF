@@ -1,6 +1,0 @@
-<launch>
-    <node pkg="rviz"  type="rviz"  name="rviz"  args="-d $(find lidar_localization)/rviz/matching.rviz"></node>
-    <node pkg="tf" type="static_transform_publisher" name="imu_velo" args="0 0 0 0 0 0 1 /imu_link /velo_link 100" />
-    <node pkg="lidar_localization"  type="data_pretreat_node"  name="data_pretreat_node"  output="screen"></node>
-    <node pkg="lidar_localization"  type="matching_node"  name="matching_node"  output="screen"></node>
-</launch>
