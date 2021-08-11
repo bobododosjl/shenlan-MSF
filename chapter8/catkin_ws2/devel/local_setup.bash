@@ -1,1 +1,0 @@
-/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/devel/.private/catkin_tools_prebuild/local_setup.bash

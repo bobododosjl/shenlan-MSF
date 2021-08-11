@@ -1,1 +1,0 @@
-/home/bobododo/GNC/MSF/shenlan-MSF/chapter8/catkin_ws2/devel/.private/lidar_localization/share/lidar_localization/cmake/lidar_localizationConfig-version.cmake
