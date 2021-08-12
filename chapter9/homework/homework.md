@@ -1,16 +1,16 @@
-#### <font color='green'>本作业旨在加深对基于图优化的建图方法理解，在IMU预积分中，课程只提供了残差对部分变量的雅可比，并在建图流程代码中补全基于IMU预积分的融合方法中的待填内容，随后和不加IMU融合时的效果进行对比。</font>
+## <font color='green'>本作业旨在加深对基于图优化的建图方法理解，在IMU预积分中，课程只提供了残差对部分变量的雅可比，并在建图流程代码中补全基于IMU预积分的融合方法中的待填内容，随后和不加IMU融合时的效果进行对比。</font>
 
 ## 评价标准：
 
-1）及格：公式推导正确，且补全代码之后功能正常
+## 1）及格：公式推导正确，且补全代码之后功能正常
 
-2）良好：及格基础上，实现和不加IMU时的效果对比和分析
+## 2）良好：及格基础上，实现和不加IMU时的效果对比和分析
 
-3）优秀：良好基础上，完成融合编码器时预积分公式的推导（方差递推、残差对状态量雅可比、bias更新等）
+## 3）优秀：良好基础上，完成融合编码器时预积分公式的推导（方差递推、残差对状态量雅可比、bias更新等）
 
 ## 1）及格：
 
-对位姿、速度、bias的求导以扰动的方式进行，所以此处状态量实际是扰动
+#### 对位姿、速度、bias的求导以扰动的方式进行，所以此处状态量实际是扰动
 
 #### 扰动如下：
 
@@ -46,7 +46,8 @@ $$
 
 #### 对p残差求导：
 
-i时刻：
+#### i时刻：
+
 $$
 \frac{\partial \mathbf{r}_{p}}{\partial \delta \mathbf{p}_{w b_{i}}}=\frac{\partial-\mathbf{q}_{w b_{i}}^{*}\left(\mathbf{p}_{w b_{i}}+\delta \mathbf{p}_{w b_{i}}\right)}{\partial \delta \mathbf{p}_{w b_{i}}}=-\mathbf{R}_{b_{i} w}
 $$
@@ -76,7 +77,8 @@ $$
 \frac{\partial \mathbf{r}_{p}}{\partial \delta \mathbf{b}_{i}^{g}}=-\mathbf{J}_{b_{i}^{g}}^{\alpha}
 $$
 
-j时刻：
+#### j时刻：
+
 $$
 \begin{aligned}
 \frac{\partial \mathbf{r}_{p}}{\partial \delta \mathbf{p}_{w b_{j}}} &=\mathbf{R}_{b_{i} w} \\
@@ -89,7 +91,8 @@ $$
 
 #### 对theta残差求导：
 
-i时刻：
+#### i时刻：
+
 $$
 \frac{\partial \mathbf{r}_{\theta}}{\partial \delta \mathbf{p}_{w b_{i}}}=\mathbf{0}
 $$
@@ -118,7 +121,8 @@ $$
 \end{aligned}
 $$
 
-j时刻：
+#### j时刻：
+
 $$
 \frac{\partial \mathbf{r}_{\theta}}{\partial \delta \mathbf{p}_{w b_{j}}}=\mathbf{0}
 $$
@@ -145,7 +149,8 @@ $$
 
 #### 对V残差求导：
 
-i时刻：
+#### i时刻：
+
 $$
 \begin{aligned}
 \frac{\partial \mathbf{r}_{v}}{\partial \delta \mathbf{p}_{w b_{i}}} &=\mathbf{0} \\
@@ -155,7 +160,8 @@ $$
 \frac{\partial \mathbf{r}_{v}}{\partial \delta \mathbf{b}_{i}^{g}} &=-\mathbf{J}_{b_{i}^{g}}^{\beta}
 \end{aligned}
 $$
-j时刻：
+#### j时刻：
+
 $$
 \begin{aligned}
 \frac{\partial \mathbf{r}_{v}}{\partial \delta \mathbf{p}_{w b_{j}}} &=\mathbf{0} \\
@@ -334,25 +340,25 @@ virtual void oplusImpl(const double *update) override {
 
 
 
-运行结果：
+#### 运行结果：
 
 ![image-20210730153510996](../../images/image-20210730153510996.png)
 
 ## 2）良好：（在及格基础上，实现和不加IMU时的效果对比和分析）
 
-备注：1，对比是全方位的，既包括轨迹精度的对比，也包括地图的质量对比（因为IMU会增加估计的平滑性）；
+#### 备注：1，对比是全方位的，既包括轨迹精度的对比，也包括地图的质量对比（因为IMU会增加估计的平滑性）；
 
 ### 定位效果比较：
 
 ### optimized(with imu pre-integration) 
 
-使用命令
+#### 使用命令
 
 ```bash
 evo_ape kitti ground_truth.txt optimized.txt -r full --plot --plot_mode xy -a
 ```
 
-结果：
+#### 结果：
 
 ```bash
 APE w.r.t. full transformation (unit-less)
@@ -374,7 +380,7 @@ APE w.r.t. full transformation (unit-less)
 
 ### optimized(without imu pre-integration)
 
-结果：
+#### 结果：
 
 ```bash
 APE w.r.t. full transformation (unit-less)
@@ -394,7 +400,7 @@ APE w.r.t. full transformation (unit-less)
 
 ![image-20210730162838384](../../images/image-20210730162838384.png)
 
-可以看出加与不加IMU的定位精度结果都差不多。下面为使用laser_odom的定位结果：
+#### 可以看出加与不加IMU的定位精度结果都差不多。下面为使用laser_odom的定位结果：
 
 ```bash
 APE w.r.t. full transformation (unit-less)
@@ -414,23 +420,24 @@ APE w.r.t. full transformation (unit-less)
 
 ![image-20210730163409595](../../images/image-20210730163409595.png)
 
-可以看出结果也差不多。
+#### 可以看出结果也差不多。
 
 ### 建图效果比较：
 
-融合IMU的建图局部效果：
+#### 融合IMU的建图局部效果：
 
 ![image-20210802093326690](../../images/image-20210802093326690.png)
 
-不融合IMU的建图局部效果：
+#### 不融合IMU的建图局部效果：
 
 ![image-20210802093238834](../../images/image-20210802093238834.png)
 
-可以明显看出融合IMU垂直方向上有重影，所以可以推断部分IMU数据在垂直方向或俯仰角上有问题。
+#### 可以明显看出融合IMU垂直方向上有重影，所以可以推断部分IMU数据在垂直方向或俯仰角上有问题。
 
 ## 3）优秀：融合编码器时的预积分公式推导（方差递推、残差对状态量雅可比、bias更新等）
 
-融合了编码器之后，IMU提供角速率，轮速里程计提供线速度：
+#### 融合了编码器之后，IMU提供角速率，轮速里程计提供线速度：
+
 $$
 \omega_{k}^{b}=\left[\begin{array}{l}
 \omega_{x k} \\
@@ -442,7 +449,8 @@ v_{x k} \\
 0
 \end{array}\right]
 $$
-从时刻i到时刻j的积分：
+#### 从时刻i到时刻j的积分：
+
 $$
 \mathbf{p}_{w b_{j}}=\mathbf{p}_{w b_{i}}+\int_{t \in[i, j]} \mathbf{q}_{w b_{t}} \mathbf{v}_{t}^{b} \delta t=\mathbf{p}_{w b_{i}}+\mathbf{q}_{w b_{i}} \int_{t \in[i, j]}\left(\mathbf{q}_{b_{i} b_{t}} \mathbf{v}_{t}^{b}\right) \delta t
 $$
@@ -457,7 +465,8 @@ $$
 \end{array}\right] \delta t
 $$
 
-定义预积分项：
+#### 定义预积分项：
+
 $$
 \alpha_{b_{i} b_{j}}=\int_{t \in[i, j]}\left(\mathbf{q}_{b_{i} b_{t}} \mathbf{v}_{t}^{b}\right) \delta t
 $$
@@ -469,7 +478,8 @@ $$
 \end{array}\right] \delta t
 $$
 
-使用中值法：
+#### 使用中值法：
+
 $$
 \omega^{b}=\frac{1}{2}\left[\left(\omega^{b_{k}}-\mathbf{b}_{k}^{g}\right)+\left(\omega^{b_{k+1}}-\mathbf{b}_{k}^{g}\right)\right]
 $$
@@ -478,7 +488,8 @@ $$
 \mathbf{v}^{b}=\frac{1}{2}\left(\mathbf{q}_{b_{i} b_{k}} \mathbf{v}^{b_{k}}+\mathbf{q}_{b_{i} b_{k+1}} \mathbf{v}^{b_{k+1}}\right)
 $$
 
-离散迭代形式如下：
+#### 离散迭代形式如下：
+
 $$
 \begin{aligned}
 \alpha_{b_{i} b_{k+1}} &=\alpha_{b_{i} b_{k}}+\mathbf{v}^{b} \delta t \\
@@ -488,7 +499,8 @@ $$
 \end{array}\right]
 \end{aligned}
 $$
-残差表示如下：
+#### 残差表示如下：
+
 $$
 \left[\begin{array}{c}
 \mathbf{r}_{p} \\
@@ -500,13 +512,15 @@ $$
 \mathbf{b}_{j}^{g}-\mathbf{b}_{i}^{g}
 \end{array}\right]
 $$
-状态表示如下：
+#### 状态表示如下：
+
 $$
 \left[\begin{array}{llll}
 \delta \mathbf{p}_{w b_{i}} & \delta \theta_{w b_{i}} & \delta \mathbf{p}_{w b_{j}} & \delta \theta_{w b_{j}}
 \end{array}\right]
 $$
-对应雅可比如下：
+#### 对应雅可比如下：
+
 $$
 \frac{\partial \mathbf{r}_{p}}{\partial \delta \mathbf{p}_{w b_{i}}}=\frac{\partial-\mathbf{q}_{w b_{i}}^{*}\left(\mathbf{p}_{w b_{i}}+\delta \mathbf{p}_{w b_{i}}\right)}{\partial \delta \mathbf{p}_{w b_{i}}}=-\mathbf{R}_{b_{i} w}
 $$
@@ -542,21 +556,24 @@ $$
 \frac{\partial \mathbf{r}_{b^{g}}}{\partial \delta \theta_{w b_{i}}}=\mathbf{0}
 $$
 
-为了传递方差，需要计算状态转移公式：
+#### 为了传递方差，需要计算状态转移公式：
+
 $$
 \begin{aligned}
 \dot{\mathbf{x}} &=\mathbf{F}_{t} \mathbf{x}+\mathbf{B}_{t} \mathbf{w} \\
 \mathbf{P}_{i, k+1}=& \mathbf{F}_{k} \mathbf{P}_{i, k} \mathbf{F}_{k}^{T}+\mathbf{B}_{k} \mathbf{Q} \mathbf{B}_{k}
 \end{aligned}
 $$
-由如下微分方程：
+#### 由如下微分方程：
+
 $$
 \begin{array}{l}
 \delta \dot{\alpha}_{t}^{b_{k}}=-\mathbf{R}_{t}^{w b} v_{t}^{\wedge} \delta \theta_{t}^{b_{k}}+\mathbf{R}_{t}^{w b} \mathbf{n}_{v} \\
 \delta \dot{\theta}_{t}^{b_{k}}=-\left(\omega_{t}-\mathbf{b}_{\omega_{t}}\right)^{\wedge} \delta \theta_{t}^{b_{k}}+\mathbf{n}_{\omega}
 \end{array}
 $$
-得到离散化形式：
+#### 得到离散化形式：
+
 $$
 \mathbf{x}_{k+1}=\mathbf{F}_{k} \mathbf{x}_{k}+\mathbf{B}_{k} \mathbf{w}_{k}
 $$
@@ -607,7 +624,8 @@ $$
 \end{aligned}
 $$
 
-所以可得F和B矩阵如下：
+#### 所以可得F和B矩阵如下：
+
 $$
 \begin{array}{c}
 \mathbf{F}_{k}=\mathbf{I}_{6}+\delta t\left[\begin{array}{ccc}
@@ -620,7 +638,8 @@ $$
 \end{array}\right]
 \end{array}
 $$
-雅可比更新公式：
+#### 雅可比更新公式：
+
 $$
 \mathbf{J}_{k+1}=\mathbf{F}_{k} \mathbf{J}_{k}
 $$

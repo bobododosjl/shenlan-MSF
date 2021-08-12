@@ -1,30 +1,32 @@
-在提供的工程的框架中，补全代码，实现基于地图的融合定位，并与不加滤波时的定位结果进行比较。
+## 在提供的工程的框架中，补全代码，实现基于地图的融合定位，并与不加滤波时的定位结果进行比较。
 
 ## 评价标准：
 
-1）及格：补全代码，且滤波功能正常。
+## 1）及格：补全代码，且滤波功能正常。
 
-2）良好：补全代码，功能正常，且经过调试参数，滤波后性能比滤波前好。（详细的误差对比结果提供在作业中）
+## 2）良好：补全代码，功能正常，且经过调试参数，滤波后性能比滤波前好。（详细的误差对比结果提供在作业中）
 
-3）优秀：在前面模型推导过程中，考虑了器件误差中的随机游走，请给出不考虑随机游走模型时的推导过程，并在工程框架中实现。对比这两种方法性能的差异。另外，kalman滤波的性能对噪声的设置较为敏感，在提供结果的同时，给出不同噪声设置情况下的结果对比（至少5组参数）。
+## 3）优秀：在前面模型推导过程中，考虑了器件误差中的随机游走，请给出不考虑随机游走模型时的推导过程，并在
 
-附加题：
+## 工程框架中实现。对比这两种方法性能的差异。另外，kalman滤波的性能对噪声的设置较为敏感，在提供结果的同
+
+## 时，给出不同噪声设置情况下的结果对比（至少5组参数）。
+
+## 附加题：
 
 ![image-20210528153311118](../../images/image-20210528153311118.png)
 
 ## 1）及格：
 
-相关环境的配置与编译比较繁琐，注意要使用protoc 3.14.0版本。
+#### 相关环境的配置与编译比较繁琐，注意要使用protoc 3.14.0版本。
 
-protoc安装的参考链接：https://www.cnblogs.com/penuel/p/11334421.html
+#### [protoc安装的参考链接](https://www.cnblogs.com/penuel/p/11334421.html)
 
-解决了环境的问题之后，完成及格部分的代码，这里主要参考chapter7课件中的Error-State-Kalman-Filter公式。
+#### 解决了环境的问题之后，完成及格部分的代码，这里主要参考chapter7课件中的Error-State-Kalman-Filter公式。
 
-这里修改error_state_kalman_filter.cpp。
+#### 这里修改error_state_kalman_filter.cpp。
 
-
-
-*预测部分：*
+#### *预测部分：*
 
 ```c++
 ///
@@ -34,9 +36,7 @@ X_ = F*X_;
 P_ = F*P_*F.transpose()+B*Q_*B.transpose();
 ```
 
-
-
-*误差部分：*
+#### *误差部分：*
 
 ```c++
 ///
@@ -50,18 +50,14 @@ YPose_.block<3,1>(3,0) = Sophus::SO3d::vee(R_nn_obs - Eigen::Matrix3d::Identity(
 Y = YPose_;
 ```
 
-
-
-*量测公式：*
+#### *量测公式：*
 
 ```c++
 //set measurement equation:
 G = GPose_;
 ```
 
-
-
-*设定kalman增益：*
+#### *设定kalman增益：*
 
 ```c++
 //
@@ -72,9 +68,7 @@ MatrixCPose C = Eigen::MatrixXd::Identity(6,6);
 K = P_ * G.transpose() * (G * P_ * G.transpose() + C * R * C.transpose()).inverse();
 ```
 
-
-
-*有观测时的量测更新：*
+#### *有观测时的量测更新：*
 
 ```c++
 //
@@ -84,9 +78,7 @@ P_ = (MatrixP::Identity() - K*G) * P_;
 X_ = X_ + K * (Y - G*X_);
 ```
 
-
-
-*有观测时计算后验值：*
+#### *有观测时计算后验值：*
 
 ```c++
 //
@@ -112,7 +104,7 @@ if(IsCovStable(INDEX_ERROR_ACCEL)){
 }
 ```
 
-*运行命令：*
+#### *运行命令：*
 
 ```bash
 # build:
@@ -125,11 +117,11 @@ roslaunch lidar_localization kitti_localization.launch
 rosbag play kitti_lidar_only_2011_10_03_drive_0027_synced.bag
 ```
 
-*运行结果：*
+#### *运行结果：*
 
-黄色轨迹为GNSS Localization，此处作为Ground Truth
+#### 黄色轨迹为GNSS Localization，此处作为Ground Truth
 
-蓝色轨迹为ESKF Fused Estimation
+#### 蓝色轨迹为ESKF Fused Estimation
 
 ![image-20210528153218752](../../images/image-20210528153218752.png)
 
@@ -139,7 +131,7 @@ rosbag play kitti_lidar_only_2011_10_03_drive_0027_synced.bag
 
 ## 2）良好：
 
-用evo评估轨迹的输出：
+#### 用evo评估轨迹的输出：
 
 ```bash
 # set up session:
@@ -153,7 +145,7 @@ evo_ape kitti ground_truth.txt laser.txt -r full --plot --plot_mode xy
 evo_ape kitti ground_truth.txt fused.txt -r full --plot --plot_mode xy
 ```
 
-参数1：
+#### 参数1：
 
 ```yaml
         process:
@@ -169,11 +161,7 @@ evo_ape kitti ground_truth.txt fused.txt -r full --plot --plot_mode xy
             vel: 2.5e-3
 ```
 
-
-
-
-
-滤波前：
+#### 滤波前：
 
 ![image-20210528154937353](../../images/image-20210528154937353.png)
 
@@ -200,9 +188,7 @@ APE w.r.t. full transformation (unit-less)
        
 ```
 
-
-
-滤波后：
+#### 滤波后：
 
 ![image-20210528155204687](../../images/image-20210528155204687.png)
 
@@ -229,7 +215,7 @@ APE w.r.t. full transformation (unit-less)
 
 
 
-参数2：
+#### 参数2：
 
 ```yaml
         process:
@@ -245,7 +231,7 @@ APE w.r.t. full transformation (unit-less)
             vel: 2.5e-5
 ```
 
-滤波前：
+#### 滤波前：
 
 ![image-20210528161527315](../../images/image-20210528161527315.png)
 
@@ -271,7 +257,7 @@ APE w.r.t. full transformation (unit-less)
 
 
 
-滤波后：
+#### 滤波后：
 
 ![image-20210528161714760](../../images/image-20210528161714760.png)
 
@@ -294,9 +280,7 @@ APE w.r.t. full transformation (unit-less)
 
 ```
 
-
-
-参数3：
+#### 参数3：
 
 ```yaml
         process:
@@ -312,9 +296,7 @@ APE w.r.t. full transformation (unit-less)
             vel: 2.5e-1
 ```
 
-
-
-滤波前：
+#### 滤波前：
 
 ![image-20210528163049357](../../images/image-20210528163049357.png)
 
@@ -335,9 +317,7 @@ APE w.r.t. full transformation (unit-less)
 
 ```
 
-
-
-滤波后：
+#### 滤波后：
 
 ![image-20210528163239140](../../images/image-20210528163239140.png)
 
@@ -374,9 +354,9 @@ APE w.r.t. full transformation (unit-less)
         }
 ```
 
-这里设置了bias_flag，设为false，所以不考虑器件误差的随机游走。
+#### 这里设置了bias_flag，设为false，所以不考虑器件误差的随机游走。
 
-滤波后:
+#### 滤波后:
 
 ```bash
 $ evo_ape kitti ground_truth.txt fused.txt -r full --plot --plot_mode xy
@@ -395,9 +375,7 @@ APE w.r.t. full transformation (unit-less)
 
 ```
 
-
-
-滤波后（考虑随机游走）：
+#### 滤波后（考虑随机游走）：
 
 ```bash
 $ evo_ape kitti ground_truth.txt fused.txt -r full --plot --plot_mode xy
@@ -416,4 +394,4 @@ APE w.r.t. full transformation (unit-less)
 
 ```
 
-基本没有差别
+#### 基本没有差别

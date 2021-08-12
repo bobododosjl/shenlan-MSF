@@ -1,48 +1,58 @@
-内容：
+## 内容：
 
-请使用以下残差模型，推导相应的雅可比，并在F-LOAM或A-LOAM基于该模型，实现解析式求导。
+## 请使用以下残差模型，推导相应的雅可比，并在F-LOAM或A-LOAM基于该模型，实现解析式求导。
 
-线特征残差：
+## 线特征残差：
 
 ![image-20210515224529065](../../images/image-20210515224529065.png)
 
-面特征残差：
+## 面特征残差：
 
 ![image-20210515224817352](../../images/image-20210515224817352.png)
 
-评价标准：
+## 评价标准：
 
-1）及格：推导雅可比，且结果正确；
+## 1）及格：推导雅可比，且结果正确；
 
-2）良好：在及格的基础上，编程实现新模型的解析式求导，且结果正常；
+## 2）良好：在及格的基础上，编程实现新模型的解析式求导，且结果正常；
 
-3）优秀：在良好的基础上，给出运行结果的精度评测结果（基于evo）。
+## 3）优秀：在良好的基础上，给出运行结果的精度评测结果（基于evo）。
 
 
 
-1）及格：
+## 1）及格：
 
-*a.线特征残差雅可比：*
+#### *a.线特征残差雅可比：*
 
 
 
 ![image-20210516110406703](../../images/image-20210516110406703.png)
 
-*b.面特征残差雅可比：*
+#### *b.面特征残差雅可比：*
 
 ![image-20210516111108020](../../images/image-20210516111108020.png)
 
 
 
-2）良好：
+#### 2）良好：
 
-Ceres库包含了自动求导，数值求导，解析求导，A-LOAM中使用的是自动求导，效率比较低，F-LOAM中使用的是解析求导，本题要求实现解析求导，将第一题的Jacobian输入成代码。
+#### Ceres库包含了自动求导，数值求导，解析求导，A-LOAM中使用的是自动求导，效率比较低，F-LOAM中使用的是解析求导，本题要求实现解析求导，将第一题的
 
-详解ceres:https://blog.csdn.net/weixin_43991178/article/details/100532618
+#### 输入成代码。
 
-https://blog.csdn.net/qq_23225073/article/details/103284327
+#### [Ceres](https://blog.csdn.net/weixin_43991178/article/details/100532618)
 
-*Ceres解析求导：线特征残差*
+#### [Ceres](https://blog.csdn.net/qq_23225073/article/details/103284327)
+
+#### 关于ceres
+
+#### （1）图优化中的顶点是被优化的变量，CERES中被定义为ParameterBlock（参数块）。
+
+#### （2）图优化中的边是观测对变量的约束，CERES中被定义为ResidualBlock（残差块）。
+
+
+
+#### *Ceres解析求导：线特征残差*
 
 ```c++
 // EdgeAnalyticCostFunction
@@ -110,7 +120,7 @@ ceres::CostFunction *cost_function = new LidarEdgeAnalyticCostFunction(curr_poin
 problem.AddResidualBlock(cost_function, loss_function, para_q, para_t);
 ```
 
-*Ceres解析求导：面特征残差*
+#### *Ceres解析求导：面特征残差*
 
 ```c++
 // PlaneAnalyticCostFunction
@@ -169,7 +179,7 @@ protected:
 };
 ```
 
-并更改problem的costFunction：
+#### 并更改problem的costFunction：
 
 ```c++
 // ceres::CostFunction *cost_function = LidarPlaneFactor::Create(curr_point, last_point_a, last_point_b, last_point_c, s);
@@ -181,15 +191,15 @@ problem.AddResidualBlock(cost_function, loss_function, para_q, para_t);
 
 ![image-20210526143132554](../../images/image-20210526143132554.png)
 
-3）优秀：EVO评测：
+#### 3）优秀：EVO评测：
 
-APE:
+#### APE:
 
 ![image-20210526143449025](../../images/image-20210526143449025.png)
 
 ![image-20210526143529018](../../images/image-20210526143529018.png)
 
-运行结果：
+#### 运行结果：
 
 ```bash
 $ evo_ape kitti ground_truth.txt laser_odom.txt -r full --plot --plot_mode xyz
@@ -209,13 +219,13 @@ APE w.r.t. full transformation (unit-less)
 
 
 
-RPE:
+#### RPE:
 
 ![image-20210526143657907](../../images/image-20210526143657907.png)
 
 ![image-20210526143721118](../../images/image-20210526143721118.png)
 
-运行结果：
+#### 运行结果：
 
 ```bash
 $ evo_rpe  kitti -a ground_truth.txt laser_odom.txt -r trans_part --delta 100 --plot --plot_mode xyz

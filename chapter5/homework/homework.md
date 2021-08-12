@@ -1,6 +1,4 @@
-
-
-# 内容：
+## 内容：
 
 ##         按照不需要转台标定方法中给出的内参模型以及残差模型，推导加速度计对应残差对加速度内参的雅可比，在开
 
@@ -8,7 +6,7 @@
 
 ## 课程给定的仿真数据做验证。
 
-# 评价标准：
+## 评价标准：
 
 ## 1）及格：完成雅可比推导，且正确；
 
@@ -24,17 +22,17 @@
 
 ## 2）良好：
 
-这里换成下三角模型，本质上是选择加速度计的坐标系和载体坐标系哪一个轴重合。
+#### 这里换成下三角模型，本质上是选择加速度计的坐标系和载体坐标系哪一个轴重合。
 
 ![image-20210524151342918](../../images/image-20210524151342918.png)
 
-这里认为x轴向重合
+#### 这里认为x轴向重合
 
-修改：
+#### 修改：
 
 ![image-20210524153454713](../../images/image-20210524153454713.png)
 
-按照上图修改得到下三角矩阵：
+#### 按照上图修改得到下三角矩阵：
 
 ```c++
     CalibratedTriad_<_T2> calib_triad( 
@@ -52,9 +50,7 @@
     );
 ```
 
-
-
-改成对应参数：
+#### 改成对应参数：
 
 ```c++
     //
@@ -65,9 +61,7 @@
     acc_calib_params[2] = init_acc_calib_.misYX();
 ```
 
-
-
-对应九维变量：
+#### 对应九维变量：
 
 ```c++
   acc_calib_ = CalibratedTriad_<_T>( 
@@ -87,9 +81,7 @@
   );
 ```
 
-
-
-结果：
+#### 结果：
 
 ```bash
 # bobododo @ bobododo-G7-7588 in ~/GNC/MSF/shenlan-MSF/chapter5/imu_tk/bin on git:master x [15:30:31] 
@@ -265,7 +257,7 @@ Gyroscopes calibration: inverse scale factors:
 
 ## 3）优秀：
 
-*代码更改：*
+#### *代码更改：*
 
 ```c++
 ///改成模板类，解析式class
@@ -359,7 +351,7 @@ protected:
 
 ```
 
-最后，调用写的类：
+#### 最后，调用写的类：
 
 ```c++
 ceres::Problem problem;
@@ -393,9 +385,7 @@ if( summary.final_cost < min_cost)
 cout << "residual " << summary.final_cost << endl;
 ```
 
-
-
-*计算residual函数取平方：*
+#### *计算residual函数取平方：*
 
 ![image-20210526110229816](../../images/image-20210526110229816.png)
 
@@ -652,7 +642,7 @@ Gyroscopes calibration: inverse scale factors:
 
 
 
-计算residual函数不取平方：
+#### 计算residual函数不取平方：
 
 ![image-20210526100537361](../../images/image-20210526100537361.png)
 

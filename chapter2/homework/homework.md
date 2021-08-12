@@ -1,80 +1,78 @@
 
 
-内容：
+## 内容：
 
-在提供的工程框架上，结合实际数据集，实现前端激光里程计，并使用evo测试其精度
+## 在提供的工程框架上，结合实际数据集，实现前端激光里程计，并使用evo测试其精度
 
-评价标准：
+## 评价标准：
 
-1）及格：跑通提供的工程框架
+## 1）及格：跑通提供的工程框架
 
-2）良好：使用evo计算出分段统计误差和整体轨迹误差
+## 2）良好：使用evo计算出分段统计误差和整体轨迹误差
 
-3）优秀：自己实现点云匹配方法，而不是直接调用pcl库的匹配方法，并使用evo计算出指标。
+## 3）优秀：自己实现点云匹配方法，而不是直接调用pcl库的匹配方法，并使用evo计算出指标。
 
 
 
-*1）及格*
+## *1）及格*
 
-使用命令保存全局地图：
+#### 使用命令保存全局地图：
 
 ```bash
 rosservice call /save_map
 ```
 
-使用命令查看保存地图：
+#### 使用命令查看保存地图：
 
 ```bash
 pcl_viewer map.pcd
 ```
 
-PCL_NDT:
+#### PCL_NDT:
 
-全局地图：
+#### 全局地图：
 
 ![image-20210511143914998](../../images/image-20210511143914998.png)
 
 ![image-20210511143947965](../../images/image-20210511143947965.png)
 
-局部地图：
+#### 局部地图：
 
 ![image-20210511144016036](../../images/image-20210511144016036.png)
 
-PCL_ICP:
+#### PCL_ICP:
 
-全局地图：
+#### 全局地图：
 
 ![image-20210511144047760](../../images/image-20210511144047760.png)
 
 ![image-20210511144107540](../../images/image-20210511144107540.png)
 
-局部地图：
+#### 局部地图：
 
 ![image-20210511144133241](../../images/image-20210511144133241.png)
 
-黄色线表示真实值GNSS的定位结果，红色线表示激光里程计的定位结果。
+#### 黄色线表示真实值GNSS的定位结果，红色线表示激光里程计的定位结果。
 
-*2）良好*
+## *2）良好*
 
-分段统计误差运行指令：
+#### 分段统计误差运行指令：
 
 ```bash
 evo_rpe kitti -a ground_truth.txt laser_odom.txt -r trans_part --delta 100 --plot --plot_mode xyz 
 ```
 
-ICP和NDT结果对比：
+#### ICP和NDT结果对比：
 
 <div class="wiz-table-container" style="position: relative; padding: 0px;" contenteditable="false"><div class="wiz-table-body" contenteditable="false"><table style="width: 1195px;"><tbody><tr><td align="left" valign="middle" style="width: 197px;"><div>分段统计误差</div></td><td align="left" valign="middle" style="width: 141px;"><div>max</div></td><td align="left" valign="middle" style="width: 140px;"><div>mean</div></td><td align="left" valign="middle" style="width: 142px;"><div>median</div></td><td align="left" valign="middle" style="width: 140px;"><div>min</div></td><td align="left" valign="middle" style="width: 137px;"><div>rmse</div></td><td align="left" valign="middle" style="width: 154px;"><div>sse</div></td><td align="left" valign="middle" style="width: 143px;"><div>std</div></td></tr><tr><td align="left" valign="middle" style="width: 197px;"><div>PCL_NDT</div></td><td align="left" valign="middle" style="width: 141px;"><div>2.558918</div></td><td align="left" valign="middle" style="width: 140px;"><div>0.869240</div></td><td align="left" valign="middle" style="width: 142px;"><div>0.763856</div></td><td align="left" valign="middle" style="width: 140px;"><div>0.176107</div></td><td align="left" valign="middle" style="width: 137px;"><div>0.993275</div></td><td align="left" valign="middle" style="width: 154px;"><div>38.477235</div></td><td align="left" valign="middle" style="width: 143px;"><div>0.480643</div></td></tr><tr><td align="left" valign="middle" style="width: 197px;"><div>PCL_ICP</div></td><td align="left" valign="middle" style="width: 141px;"><div>277.272412</div></td><td align="left" valign="middle" style="width: 140px;"><div> 59.495329</div></td><td align="left" valign="middle" style="width: 142px;"><div>28.539019</div></td><td align="left" valign="middle" style="width: 140px;"><div>0.348698</div></td><td align="left" valign="middle" style="width: 137px;"><div>92.620375</div></td><td align="left" valign="middle" style="width: 154px;"><div>386034.025493</div></td><td align="left" valign="middle" style="width: 143px;"><div>70.984785</div></td></tr></tbody></table></div></div>
 
-
-
-PCL_ICP:
+#### PCL_ICP:
 
 ![image-20210511144212608](../../images/image-20210511144212608.png)
 
 ![image-20210511144229377](../../images/image-20210511144229377.png)
 
-PCL_NDT:
+#### PCL_NDT:
 
 ![image-20210511144309417](../../images/image-20210511144309417.png)
 
@@ -82,17 +80,17 @@ PCL_NDT:
 
 
 
-整体轨迹误差运行指令：
+#### 整体轨迹误差运行指令：
 
 ```bash
 evo_ape kitti ground_truth.txt laser_odom.txt -r full --plot --plot_mode xyz
 ```
 
-ICP和NDT结果对比：
+#### ICP和NDT结果对比：
 
 <div class="wiz-table-container" style="position: relative; padding: 0px;" contenteditable="false"><div class="wiz-table-body" contenteditable="false"><table style="width: 1195px;"><tbody><tr><td align="left" valign="middle" style="width: 197px;"><div>分段统计误差</div></td><td align="left" valign="middle" style="width: 141px;"><div>max</div></td><td align="left" valign="middle" style="width: 140px;"><div>mean</div></td><td align="left" valign="middle" style="width: 142px;"><div>median</div></td><td align="left" valign="middle" style="width: 140px;"><div>min</div></td><td align="left" valign="middle" style="width: 137px;"><div>rmse</div></td><td align="left" valign="middle" style="width: 154px;"><div>sse</div></td><td align="left" valign="middle" style="width: 143px;"><div>std</div></td></tr><tr><td align="left" valign="middle" style="width: 197px;"><div>PCL_NDT</div></td><td align="left" valign="middle" style="width: 141px;"><div>60.603878</div></td><td align="left" valign="middle" style="width: 140px;"><div>14.424296</div></td><td align="left" valign="middle" style="width: 142px;"><div>10.515596</div></td><td align="left" valign="middle" style="width: 140px;"><div>0.000001</div></td><td align="left" valign="middle" style="width: 137px;"><div>17.728936</div></td><td align="left" valign="middle" style="width: 154px;"><div>1224886.225163</div></td><td align="left" valign="middle" style="width: 143px;"><div>10.30799</div></td></tr><tr><td align="left" valign="middle" style="width: 197px;"><div>PCL_ICP</div></td><td align="left" valign="middle" style="width: 141px;"><div>1023.246462</div></td><td align="left" valign="middle" style="width: 140px;"><div>352.875745</div></td><td align="left" valign="middle" style="width: 142px;"><div>304.895038</div></td><td align="left" valign="middle" style="width: 140px;"><div>0.000001</div></td><td align="left" valign="middle" style="width: 137px;"><div>480.564659</div></td><td align="left" valign="middle" style="width: 154px;"><div>941552128.918073</div></td><td align="left" valign="middle" style="width: 143px;"><div>326.222470</div></td></tr></tbody></table></div></div>
 
-PCL_ICP:
+#### PCL_ICP:
 
 ![image-20210511144356809](../../images/image-20210511144356809.png)
 
@@ -100,7 +98,7 @@ PCL_ICP:
 
 
 
-PCL_NDT:
+#### PCL_NDT:
 
 ![image-20210511144432925](../../images/image-20210511144432925.png)
 
@@ -108,17 +106,19 @@ PCL_NDT:
 
 
 
-*3）优秀*
+## *3）优秀*
 
-这里，PCL_ICP使用的是基于SVD的方法来求解。作业部分考虑使用高斯牛顿法来求解ICP问题。
+#### 这里，PCL_ICP使用的是基于SVD的方法来求解。作业部分考虑使用高斯牛顿法来求解ICP问题。
 
-*编程思路：*
+#### *编程思路：*
 
-这里用到了李代数，基于优化的ICP对应的雅可比推导在李代数模式下会更加简洁，所以会用到sophus库。将sophus库放到了lidar_localization/modules里面，并且在lidar_localization/cmake里面添加sophus.cmake，并在lidar_localization文件夹的cmakelists.txt里面添加include(cmake/sophus.cmake)。
+#### 这里用到了李代数，基于优化的ICP对应的雅可比推导在李代数模式下会更加简洁，所以会用到sophus库。将sophus库放到了lidar_localization/modules里
+
+#### 面，并且在lidar_localization/cmake里面添加sophus.cmake，并在lidar_localization文件夹的cmakelists.txt里面添加include(cmake/sophus.cmake)。
 
 
 
-*新建立icp_manual_registration.hpp以及icp_manual_registration.cpp*
+#### *新建立icp_manual_registration.hpp以及icp_manual_registration.cpp*
 
 ```c++
 //
@@ -232,6 +232,7 @@ namespace lidar_localization {
         CloudData::CLOUD_PTR  transformed_cloud(new CloudData::CLOUD);
         int knn = 1;     /// 进行 1nn的搜索
         int iterator_num = 0;
+        ///高斯牛顿迭代过程
         while(iterator_num < max_iterator_)
         {
             pcl::transformPointCloud(*input_source,*transformed_cloud,transformation_);    /// 对点云进行变换
@@ -288,13 +289,13 @@ namespace lidar_localization {
 
 
 
-*之后，在front_end.hpp中增加：*
+#### *之后，在front_end.hpp中增加：*
 
 ```c++
  #include "lidar_localization/models/registration/icp_manual_registration.hpp"
 ```
 
-*并修改front_end.cpp增加如下代码：*
+#### *并修改front_end.cpp增加如下代码：*
 
 ```c++
    else if (registration_method == "ICP_MANUAL")
@@ -303,9 +304,9 @@ namespace lidar_localization {
     }
 ```
 
-*修改config.yaml文件*
+#### *修改config.yaml文件*
 
-全局地图：
+#### 全局地图：
 
 ![image-20210511144551162](../../images/image-20210511144551162.png)
 
@@ -317,51 +318,51 @@ namespace lidar_localization {
 
 <div class="wiz-table-container" style="position: relative; padding: 0px;" contenteditable="false"><div class="wiz-table-body" contenteditable="false"><table><tbody><tr><td colspan="1" rowspan="1" style="width:197px;color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;"><div style="color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;">整体轨迹误差</div></td>    <td colspan="1" rowspan="1" style="width:141px;color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;"><div style="color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;">max</div></td>    <td colspan="1" rowspan="1" style="width:140px;color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;"><div style="color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;">mean</div></td>    <td colspan="1" rowspan="1" style="width:142px;color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;"><div style="color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;">median</div></td>    <td colspan="1" rowspan="1" style="width:140px;color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;"><div style="color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;">min</div></td>    <td colspan="1" rowspan="1" style="width:137px;color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;"><div style="color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;">rmse</div></td>    <td colspan="1" rowspan="1" style="width:154px;color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;"><div style="color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;">sse</div></td>    <td colspan="1" rowspan="1" style="width:143px;color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;"><div style="color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;">std</div></td></tr><tr><td colspan="1" rowspan="1" style="width:197px;color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;"><div style="color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;">PCL_NDT</div></td>    <td colspan="1" rowspan="1" style="width:141px;color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;"><div style="color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;">50.64736</div></td>    <td colspan="1" rowspan="1" style="width:140px;color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;"><div style="color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;">13.00657</div></td>    <td colspan="1" rowspan="1" style="width:142px;color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;"><div style="color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;">9.943388</div></td>    <td colspan="1" rowspan="1" style="width:140px;color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;"><div style="color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;">0.000001</div></td>    <td colspan="1" rowspan="1" style="width:137px;color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;"><div style="color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;">15.63118</div></td>    <td colspan="1" rowspan="1" style="width:154px;color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;"><div style="color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;">957544.690757</div></td>    <td colspan="1" rowspan="1" style="width:143px;color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;"><div style="color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;">8.669656</div></td></tr><tr><td colspan="1" rowspan="1" style="width:197px;color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;"><div style="color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;">PCL_ICP</div></td>    <td colspan="1" rowspan="1" style="width:141px;color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;"><div style="color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;">1046.451926</div></td>    <td colspan="1" rowspan="1" style="width:140px;color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;"><div>195.965895</div></td>    <td colspan="1" rowspan="1" style="width:142px;color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;"><div>22.540432</div></td>    <td colspan="1" rowspan="1" style="width:140px;color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;"><div>0.000001</div></td>    <td colspan="1" rowspan="1" style="width:137px;color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;"><div>344.925646</div></td>    <td colspan="1" rowspan="1" style="width:154px;color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;"><div style="color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;">992240669.240040</div></td>    <td colspan="1" rowspan="1" style="width:143px;color:rgb(166, 166, 166) !important;background-color:rgb(39, 39, 39) !important;background-image:none !important;"><div>283.850435</div></td></tr><tr><td style="width: 197px; color: rgb(166, 166, 166) !important; background-color: rgb(39, 39, 39) !important; background-image: none !important;"><div>ICP_MANUAL</div></td><td style="width: 141px; color: rgb(166, 166, 166) !important; background-color: rgb(39, 39, 39) !important; background-image: none !important;"><div>35.810348</div></td><td style="width: 140px; color: rgb(166, 166, 166) !important; background-color: rgb(39, 39, 39) !important; background-image: none !important;"><div>17.302969</div></td><td style="width: 142px; color: rgb(166, 166, 166) !important; background-color: rgb(39, 39, 39) !important; background-image: none !important;"><div>16.745095</div></td><td style="width: 140px; color: rgb(166, 166, 166) !important; background-color: rgb(39, 39, 39) !important; background-image: none !important;"><div>0.000001</div></td><td style="width: 137px; color: rgb(166, 166, 166) !important; background-color: rgb(39, 39, 39) !important; background-image: none !important;"><div>19.201677</div></td><td style="width: 154px; color: rgb(166, 166, 166) !important; background-color: rgb(39, 39, 39) !important; background-image: none !important;"><div>1675024.107757</div></td><td style="width: 143px; color: rgb(166, 166, 166) !important; background-color: rgb(39, 39, 39) !important; background-image: none !important;"><div>8.325363</div></td></tr></tbody></table></div></div>
 
-三种方法对比：
+#### 三种方法对比：
 
-具体参考rmse指标：
+#### 具体参考rmse指标：
 
-（1）分段统计误差：
+#### （1）分段统计误差：
 
-ICP_MANUAL>PCL_NDT>PCL_ICP
+#### ICP_MANUAL>PCL_NDT>PCL_ICP
 
-（2）整体轨迹误差：
+#### （2）整体轨迹误差：
 
-PCL_NDT>ICP_MANUAL>PCL_ICP
+#### PCL_NDT>ICP_MANUAL>PCL_ICP
 
 
 
-思路：
+#### 思路：
 
-这里不使用PCL库，手动推导相关过程：
+#### 这里不使用PCL库，手动推导相关过程：
 
-a.输入目标点云：
+#### a.输入目标点云：
 
-目标点云用来构建一个kdtree，方便待匹配的点云寻找最近点。
+#### 目标点云用来构建一个kdtree，方便待匹配的点云寻找最近点。
 
-b.输入待匹配的点云以及初始位姿R，t
+#### b.输入待匹配的点云以及初始位姿R，t
 
 ![image-20210511144705870](../../images/image-20210511144705870.png)
 
-DEBUG：
+#### DEBUG：
 
 
 
-环境自己配置没有使用docker，但是编译过程遇到问题：
+#### 环境自己配置没有使用docker，但是编译过程遇到问题：
 
 ```bash
 By not providing "FindGeographicLib.cmake" in CMAKE_MODULE_PATH this project has asked CMake to find a package configuration file provided by "GeographicLib", but CMake did not find one.
 ```
 
-这里通过stack overflow找到解决办法：
+#### 这里通过stack overflow找到解决办法：
 
-首先
+#### 首先
 
 ```bash
 cp /opt/ros/kinetic/share/libmavconn/cmake/Modules/FindGeographicLib.cmake /home/bobododo/GNC/MSF/chapter2/homework/catkin_ws3/src/lidar_localization/modules/FindGeographicLib.cmake
 ```
 
-之后修改cmakelists.txt
+#### 之后修改cmakelists.txt
 
 ```CMAKE
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/modules)

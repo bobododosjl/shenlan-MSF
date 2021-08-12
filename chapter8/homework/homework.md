@@ -1,24 +1,28 @@
-在第七章作业中实现的滤波方案的基础上，实现融合运动模型的滤波方法，并对比加入运动模型约束前后，滤波精度的变化。由于运动模型约束更多的是改善速度的波动，而且是y向和z向的波动，所以要
+## 在第七章作业中实现的滤波方案的基础上，实现融合运动模型的滤波方法，并对比加入运动模型约束前后，滤波精度
 
-展示结果时候，提供b系y向和z向速度误差的曲线与指标。
+## 的变化。由于运动模型约束更多的是改善速度的波动，而且是y向和z向的波动，所以要展示结果时候，提供b系y向
 
-注：同样由于kitti数据集质量的问题，效果的改善不一定在所有路段都能体现，可以挑选效果好的路段重点展示。
+## 和z向速度误差的曲线与指标。
+
+## 注：同样由于kitti数据集质量的问题，效果的改善不一定在所有路段都能体现，可以挑选效果好的路段重点展示。
 
 
 
 ## 评价标准：
 
-1）及格：实现新模型，且功能正常
+## 1）及格：实现新模型，且功能正常
 
-2）良好：实现新模型，且部分路段性能有改善
+## 2）良好：实现新模型，且部分路段性能有改善
 
-3）优秀：在良好的基础上，增加编码器融合的内容，具体如下：
+## 3）优秀：在良好的基础上，增加编码器融合的内容，具体如下：
 
-使用仿真数据（仿真数据需要依据下方链接中的仿真程序自己生成），实现以GPS位置和编码器速度为观测量的融合方法，并分析其精度。
+## 使用仿真数据（仿真数据需要依据下方链接中的仿真程序自己生成），实现以GPS位置和编码器速度为观测量的融合
+
+## 方法，并分析其精度。
 
 
 
-#### 附加题：
+## 附加题：
 
 ![image-20210528221932703](../../images/image-20210528221932703.png)
 
@@ -34,15 +38,18 @@
 
 #### <font color='green'>由于导航解算得到的是w系下的速度，而速度观测是b系下的，因此需要推导两者之间的误差关系，才能得到相应的观测方程。</font>
 
-1）写出不考虑误差时的方程：
+#### 1）写出不考虑误差时的方程：
+
 $$
 \boldsymbol{v}^{b}=\boldsymbol{R}_{b w} \boldsymbol{v}^{w}
 $$
-2）写出考虑误差时的方程：
+#### 2）写出考虑误差时的方程：
+
 $$
 \tilde{\boldsymbol{v}}^{b}=\tilde{\boldsymbol{R}}_{b w} \tilde{\boldsymbol{v}}^{w}
 $$
-3）写出真实值和理想值之间的关系：
+#### 3）写出真实值和理想值之间的关系：
+
 $$
 \begin{array}{l}
 \tilde{\boldsymbol{v}}^{b}=\boldsymbol{v}^{b}+\delta \boldsymbol{v}^{b} \\
@@ -50,19 +57,23 @@ $$
 \tilde{\boldsymbol{R}}_{b w}=\tilde{\boldsymbol{R}}_{w b}^{T}=\left(\boldsymbol{R}_{w b}\left(\boldsymbol{I}+[\delta \boldsymbol{\theta}]_{\times}\right)\right)^{T}=\left(\boldsymbol{I}-[\delta \boldsymbol{\theta}]_{\times}\right) \boldsymbol{R}_{b w}
 \end{array}
 $$
-4）把3）中的关系带入2）式
+#### 4）把3）中的关系带入2）式
+
 $$
 \boldsymbol{v}^{b}+\delta \boldsymbol{v}^{b}=\left(\boldsymbol{I}-[\delta \boldsymbol{\theta}]_{\times}\right) \boldsymbol{R}_{b w}\left(\boldsymbol{v}^{w}+\delta \boldsymbol{v}^{w}\right)
 $$
-5）把1）中的关系带入4）式
+#### 5）把1）中的关系带入4）式
+
 $$
 \boldsymbol{R}_{b w} \boldsymbol{v}^{w}+\delta \boldsymbol{v}^{b}=\left(\boldsymbol{I}-[\delta \boldsymbol{\theta}]_{\times}\right) \boldsymbol{R}_{b w}\left(\boldsymbol{v}^{w}+\delta \boldsymbol{v}^{w}\right)
 $$
-6）化简方程
+#### 6）化简方程
+
 $$
 \delta \boldsymbol{v}^{b}=\boldsymbol{R}_{b w} \delta \boldsymbol{v}^{w}-[\delta \boldsymbol{\theta}]_{\times} \boldsymbol{R}_{b w} \boldsymbol{v}^{w}=\boldsymbol{R}_{b w} \delta \boldsymbol{v}^{w}-[\delta \boldsymbol{\theta}]_{\times} \boldsymbol{v}^{b}=\boldsymbol{R}_{b w} \delta \boldsymbol{v}^{w}+\left[\boldsymbol{v}^{b}\right]_{\times} \delta \boldsymbol{\theta}
 $$
-已经知道状态量如下所示：
+#### 已经知道状态量如下所示：
+
 $$
 \delta \boldsymbol{x}=\left[\begin{array}{c}
 \delta \boldsymbol{p} \\
@@ -72,7 +83,8 @@ $$
 \delta \boldsymbol{b}_{\omega}
 \end{array}\right]
 $$
-而融合编码器以后，观测量变为：
+#### 而融合编码器以后，观测量变为：
+
 $$
 \boldsymbol{y}=\left[\begin{array}{c}
 \delta \overline{\boldsymbol{p}} \\
@@ -80,7 +92,8 @@ $$
 \delta \overline{\boldsymbol{\theta}}
 \end{array}\right]
 $$
-其中，$\delta \overline{\boldsymbol{v}}^{b}$的观测值可以通过下式获得：
+#### 其中，$\delta \overline{\boldsymbol{v}}^{b}$的观测值可以通过下式获得：
+
 $$
 \delta \overline{\boldsymbol{v}}_{b}=\tilde{\boldsymbol{v}}^{b}-\boldsymbol{v}^{b}=\tilde{\boldsymbol{R}}_{b w} \tilde{\boldsymbol{v}}^{w}-\left[\begin{array}{c}
 \boldsymbol{v}_{m} \\
@@ -88,7 +101,8 @@ $$
 0
 \end{array}\right]
 $$
-此时的观测方程$\boldsymbol{y}=\boldsymbol{G}_{t} \delta \boldsymbol{x}+\boldsymbol{C}_{t} \boldsymbol{n}$的各变量应重写为:
+#### 此时的观测方程$\boldsymbol{y}=\boldsymbol{G}_{t} \delta \boldsymbol{x}+\boldsymbol{C}_{t} \boldsymbol{n}$的各变量应重写为:
+
 $$
 \boldsymbol{G}_{t}=\left[\begin{array}{ccccc}
 \boldsymbol{I}_{3} & \mathbf{0} & \mathbf{0} & \mathbf{0} & \mathbf{0} \\
@@ -111,7 +125,8 @@ n_{\delta \bar{p}_{x}} & n_{\delta \bar{p}_{y}} & n_{\delta \bar{p}_{z}} & n_{\d
 \end{array}\right]^{T}
 $$
 
-大部分情况，硬件平台并没有编码器，不能直接使用编码器模型，但结合车本身的运动特性（侧向和天向速度为零）仍然可以使用，可以得到新的观测量：
+#### 大部分情况，硬件平台并没有编码器，不能直接使用编码器模型，但结合车本身的运动特性（侧向和天向速度为零）仍然可以使用，可以得到新的观测量：
+
 $$
 \boldsymbol{y}=\left[\begin{array}{c}
 \delta \overline{\boldsymbol{p}} \\
@@ -119,7 +134,8 @@ $$
 \delta \overline{\boldsymbol{\theta}}
 \end{array}\right]
 $$
-对观测量带来的改变仅仅是少了一个维度，观测方程$\boldsymbol{y}=\boldsymbol{G}_{t} \delta \boldsymbol{x}+\boldsymbol{C}_{t} \boldsymbol{n}$中的各变量重新写为：
+#### 对观测量带来的改变仅仅是少了一个维度，观测方程$\boldsymbol{y}=\boldsymbol{G}_{t} \delta \boldsymbol{x}+\boldsymbol{C}_{t} \boldsymbol{n}$中的各变量重新写为：
+
 $$
 \begin{aligned}
 \boldsymbol{G}_{t} &=\left[\begin{array}{ccccc}
@@ -230,8 +246,6 @@ void ErrorStateKalmanFilter::CorrectErrorEstimationPose(
 
 ## 2）良好：实现新模型，且部分路段性能有改善
 
-
-
 #### 融合结果：
 
 ```bash
@@ -274,7 +288,7 @@ APE w.r.t. full transformation (unit-less)
 
 ![image-20210811163729019](../../images/image-20210811163729019.png)
 
-从结果可以看出差别不大。
+#### 从结果可以看出差别不大。
 
 ## 3）优秀：在良好的基础上，增加编码器融合的内容，具体如下：
 
