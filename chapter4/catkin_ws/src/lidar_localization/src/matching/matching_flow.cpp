@@ -107,12 +107,12 @@ bool MatchingFlow::UpdateMatching() {
     if (!matching_ptr_->HasInited()) {
         //
         // TODO: implement global initialization here
-        if(!(matching_ptr_->SetScanContextPose(current_cloud_data_))){
-            return false;
-        }
+        ///if(!(matching_ptr_->SetScanContextPose(current_cloud_data_))){
+        ///    return false;
+        ///}
         // Hints: You can use SetGNSSPose & SetScanContextPose from matching.hpp
         //
-
+        matching_ptr_->SetGNSSPose(current_gnss_data_.pose);
         // naive implementation:
         ///Eigen::Matrix4f init_pose = Eigen::Matrix4f::Identity();
         

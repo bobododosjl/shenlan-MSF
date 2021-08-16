@@ -24,9 +24,7 @@
 
 #### *a.线特征残差雅可比：*
 
-
-
-![image-20210516110406703](../../images/image-20210516110406703.png)
+<img src="../../images/image-20210816150732366.png" alt="image-20210816150732366" style="zoom:150%;" />
 
 #### *b.面特征残差雅可比：*
 
@@ -34,11 +32,11 @@
 
 
 
-#### 2）良好：
+## 2）良好：
 
 #### Ceres库包含了自动求导，数值求导，解析求导，A-LOAM中使用的是自动求导，效率比较低，F-LOAM中使用的是解析求导，本题要求实现解析求导，将第一题的
 
-#### 输入成代码。
+#### 公式输入成代码。
 
 #### [Ceres](https://blog.csdn.net/weixin_43991178/article/details/100532618)
 
@@ -191,7 +189,7 @@ problem.AddResidualBlock(cost_function, loss_function, para_q, para_t);
 
 ![image-20210526143132554](../../images/image-20210526143132554.png)
 
-#### 3）优秀：EVO评测：
+## 3）优秀：EVO评测：
 
 #### APE:
 

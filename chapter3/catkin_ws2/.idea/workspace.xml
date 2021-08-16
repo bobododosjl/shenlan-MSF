@@ -2,53 +2,52 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="lidar_localization" targetName="topic_tools_generate_messages_nodejs" />
+      <config projectName="lidar_localization" targetName="rosgraph_msgs_generate_messages_py" />
       <config projectName="lidar_localization" targetName="dynamic_reconfigure_gencfg" />
       <config projectName="lidar_localization" targetName="lidar_localization_genpy" />
       <config projectName="lidar_localization" targetName="bond_generate_messages_nodejs" />
       <config projectName="lidar_localization" targetName="tf2_msgs_generate_messages_py" />
       <config projectName="lidar_localization" targetName="actionlib_generate_messages_nodejs" />
       <config projectName="lidar_localization" targetName="pcl_msgs_generate_messages_lisp" />
+      <config projectName="lidar_localization" targetName="std_srvs_generate_messages_cpp" />
       <config projectName="lidar_localization" targetName="std_msgs_generate_messages_cpp" />
-      <config projectName="lidar_localization" targetName="doxygen" />
       <config projectName="lidar_localization" targetName="roscpp_generate_messages_eus" />
       <config projectName="lidar_localization" targetName="aloam_laser_odometry_node" />
       <config projectName="lidar_localization" targetName="dynamic_reconfigure_generate_messages_py" />
-      <config projectName="lidar_localization" targetName="roscpp_generate_messages_lisp" />
+      <config projectName="lidar_localization" targetName="geometry_msgs_generate_messages_cpp" />
       <config projectName="lidar_localization" targetName="lidar_localization_generate_messages_lisp" />
       <config projectName="lidar_localization" targetName="tf_generate_messages_py" />
-      <config projectName="lidar_localization" targetName="roscpp_generate_messages_cpp" />
-      <config projectName="lidar_localization" targetName="rosgraph_msgs_generate_messages_cpp" />
-      <config projectName="lidar_localization" targetName="rosgraph_msgs_generate_messages_py" />
+      <config projectName="lidar_localization" targetName="nav_msgs_generate_messages_nodejs" />
       <config projectName="lidar_localization" targetName="_lidar_localization_generate_messages_check_deps_saveMap" />
-      <config projectName="lidar_localization" targetName="geometry_msgs_generate_messages_cpp" />
+      <config projectName="lidar_localization" targetName="lidar_localization_generate_messages_cpp" />
       <config projectName="lidar_localization" targetName="sensor_msgs_generate_messages_cpp" />
       <config projectName="lidar_localization" targetName="tf_generate_messages_lisp" />
       <config projectName="lidar_localization" targetName="tf2_msgs_generate_messages_cpp" />
       <config projectName="lidar_localization" targetName="lidar_localization_generate_messages_py" />
+      <config projectName="lidar_localization" targetName="std_srvs_generate_messages_lisp" />
       <config projectName="lidar_localization" targetName="std_srvs_generate_messages_eus" />
       <config projectName="lidar_localization" targetName="dynamic_reconfigure_generate_messages_nodejs" />
       <config projectName="lidar_localization" targetName="geometry_msgs_generate_messages_nodejs" />
       <config projectName="lidar_localization" targetName="lidar_localization_gencpp" />
+      <config projectName="lidar_localization" targetName="rosgraph_msgs_generate_messages_cpp" />
       <config projectName="lidar_localization" targetName="topic_tools_generate_messages_lisp" />
-      <config projectName="lidar_localization" targetName="std_srvs_generate_messages_lisp" />
       <config projectName="lidar_localization" targetName="std_msgs_generate_messages_eus" />
       <config projectName="lidar_localization" targetName="lidar_localization_generate_messages" />
-      <config projectName="lidar_localization" targetName="rosgraph_msgs_generate_messages_eus" />
-      <config projectName="lidar_localization" targetName="std_srvs_generate_messages_py" />
+      <config projectName="lidar_localization" targetName="topic_tools_generate_messages_cpp" />
       <config projectName="lidar_localization" targetName="nodelet_generate_messages_cpp" />
+      <config projectName="lidar_localization" targetName="aloam_scan_registration_node" />
       <config projectName="lidar_localization" targetName="nav_msgs_generate_messages_lisp" />
       <config projectName="lidar_localization" targetName="bond_generate_messages_py" />
       <config projectName="lidar_localization" targetName="actionlib_msgs_generate_messages_cpp" />
-      <config projectName="lidar_localization" targetName="pcl_msgs_generate_messages_eus" />
+      <config projectName="lidar_localization" targetName="topic_tools_generate_messages_nodejs" />
       <config projectName="lidar_localization" targetName="roscpp_generate_messages_nodejs" />
       <config projectName="lidar_localization" targetName="topic_tools_generate_messages_py" />
       <config projectName="lidar_localization" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="lidar_localization" targetName="topic_tools_generate_messages_eus" />
       <config projectName="lidar_localization" targetName="gmock" />
       <config projectName="lidar_localization" targetName="geometry_msgs_generate_messages_eus" />
       <config projectName="lidar_localization" targetName="sensor_msgs_generate_messages_eus" />
       <config projectName="lidar_localization" targetName="bond_generate_messages_lisp" />
-      <config projectName="lidar_localization" targetName="nodelet_generate_messages_py" />
       <config projectName="lidar_localization" targetName="nodelet_generate_messages_eus" />
       <config projectName="lidar_localization" targetName="actionlib_msgs_generate_messages_nodejs" />
       <config projectName="lidar_localization" targetName="lidar_localization_generate_messages_nodejs" />
@@ -56,8 +55,9 @@
       <config projectName="lidar_localization" targetName="actionlib_generate_messages_cpp" />
       <config projectName="lidar_localization" targetName="tf2_msgs_generate_messages_nodejs" />
       <config projectName="lidar_localization" targetName="lidar_localization_geneus" />
-      <config projectName="lidar_localization" targetName="lidar_localization_generate_messages_cpp" />
+      <config projectName="lidar_localization" targetName="rosgraph_msgs_generate_messages_eus" />
       <config projectName="lidar_localization" targetName="tf2_msgs_generate_messages_lisp" />
+      <config projectName="lidar_localization" targetName="sensor_msgs_generate_messages_nodejs" />
       <config projectName="lidar_localization" targetName="run_tests" />
       <config projectName="lidar_localization" targetName="download_extra_data" />
       <config projectName="lidar_localization" targetName="std_msgs_generate_messages_nodejs" />
@@ -70,17 +70,17 @@
       <config projectName="lidar_localization" targetName="sensor_msgs_generate_messages_py" />
       <config projectName="lidar_localization" targetName="nodelet_topic_tools_gencfg" />
       <config projectName="lidar_localization" targetName="tests" />
-      <config projectName="lidar_localization" targetName="tf_generate_messages_eus" />
       <config projectName="lidar_localization" targetName="pcl_ros_gencfg" />
       <config projectName="lidar_localization" targetName="pcl_msgs_generate_messages_cpp" />
       <config projectName="lidar_localization" targetName="nav_msgs_generate_messages_eus" />
       <config projectName="lidar_localization" targetName="std_msgs_generate_messages_lisp" />
-      <config projectName="lidar_localization" targetName="nav_msgs_generate_messages_nodejs" />
       <config projectName="lidar_localization" targetName="dynamic_reconfigure_generate_messages_cpp" />
       <config projectName="lidar_localization" targetName="rosgraph_msgs_generate_messages_nodejs" />
-      <config projectName="lidar_localization" targetName="tf_generate_messages_nodejs" />
+      <config projectName="lidar_localization" targetName="lidar_localization_genlisp" />
       <config projectName="lidar_localization" targetName="roscpp_generate_messages_py" />
-      <config projectName="lidar_localization" targetName="topic_tools_generate_messages_eus" />
+      <config projectName="lidar_localization" targetName="tf_generate_messages_eus" />
+      <config projectName="lidar_localization" targetName="clean_test_results" />
+      <config projectName="lidar_localization" targetName="roscpp_generate_messages_lisp" />
       <config projectName="lidar_localization" targetName="lidar_localization_generate_messages_eus" />
       <config projectName="lidar_localization" targetName="lidar_localization_gennodejs" />
       <config projectName="lidar_localization" targetName="aloam_mapping_node" />
@@ -88,27 +88,27 @@
       <config projectName="lidar_localization" targetName="actionlib_generate_messages_eus" />
       <config projectName="lidar_localization" targetName="tf2_msgs_generate_messages_eus" />
       <config projectName="lidar_localization" targetName="bond_generate_messages_cpp" />
-      <config projectName="lidar_localization" targetName="clean_test_results" />
+      <config projectName="lidar_localization" targetName="nodelet_generate_messages_py" />
       <config projectName="lidar_localization" targetName="dynamic_reconfigure_generate_messages_lisp" />
       <config projectName="lidar_localization" targetName="actionlib_msgs_generate_messages_lisp" />
-      <config projectName="lidar_localization" targetName="topic_tools_generate_messages_cpp" />
+      <config projectName="lidar_localization" targetName="roscpp_generate_messages_cpp" />
       <config projectName="lidar_localization" targetName="rosgraph_msgs_generate_messages_lisp" />
       <config projectName="lidar_localization" targetName="actionlib_generate_messages_lisp" />
       <config projectName="lidar_localization" targetName="evaluation_node" />
       <config projectName="lidar_localization" targetName="pcl_msgs_generate_messages_py" />
       <config projectName="lidar_localization" targetName="pcl_msgs_generate_messages_nodejs" />
       <config projectName="lidar_localization" targetName="actionlib_msgs_generate_messages_py" />
-      <config projectName="lidar_localization" targetName="aloam_scan_registration_node" />
+      <config projectName="lidar_localization" targetName="pcl_msgs_generate_messages_eus" />
       <config projectName="lidar_localization" targetName="gtest" />
       <config projectName="lidar_localization" targetName="gmock_main" />
       <config projectName="lidar_localization" targetName="nodelet_generate_messages_nodejs" />
       <config projectName="lidar_localization" targetName="nodelet_generate_messages_lisp" />
       <config projectName="lidar_localization" targetName="dynamic_reconfigure_generate_messages_eus" />
-      <config projectName="lidar_localization" targetName="sensor_msgs_generate_messages_nodejs" />
+      <config projectName="lidar_localization" targetName="std_srvs_generate_messages_py" />
       <config projectName="lidar_localization" targetName="bond_generate_messages_eus" />
-      <config projectName="lidar_localization" targetName="lidar_localization_genlisp" />
+      <config projectName="lidar_localization" targetName="doxygen" />
       <config projectName="lidar_localization" targetName="actionlib_generate_messages_py" />
-      <config projectName="lidar_localization" targetName="std_srvs_generate_messages_cpp" />
+      <config projectName="lidar_localization" targetName="tf_generate_messages_nodejs" />
       <config projectName="lidar_localization" targetName="std_srvs_generate_messages_nodejs" />
     </generated>
   </component>
@@ -119,8 +119,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a110c7bb-e1c4-406b-b3a3-62df6717507b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../chapter2/homework/homework.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter2/homework/homework.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.catkin_tools/profiles/default/devel_collisions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.catkin_tools/profiles/default/devel_collisions.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lidar_localization/include/lidar_localization/models/loam/aloam_factor.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lidar_localization/include/lidar_localization/models/loam/aloam_factor.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework/homework.md" beforeDir="false" afterPath="$PROJECT_DIR$/../homework/homework.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/src/lidar_localization/cmake-build-debug/" />
     <ignored path="/usr/src/googletest/googletest/CMakeFiles/" />
@@ -145,11 +147,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lidar_localization/include/lidar_localization/models/loam/aloam_factor.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="39" column="73" lean-forward="true" selection-start-line="39" selection-start-column="73" selection-end-line="39" selection-end-column="73" />
+            <state relative-caret-position="229">
+              <caret line="85" column="7" selection-start-line="85" selection-start-column="7" selection-end-line="85" selection-end-column="7" />
               <folding>
                 <element signature="e#309#334#0" expanded="true" />
               </folding>
@@ -157,11 +159,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lidar_localization/src/aloam_mapping_node.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="571" column="31" selection-start-line="571" selection-start-column="31" selection-end-line="571" selection-end-column="31" />
+            <state relative-caret-position="18445">
+              <caret line="527" column="21" selection-start-line="527" selection-start-column="21" selection-end-line="527" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -169,8 +171,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file:///usr/local/include/ceres/sized_cost_function.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1575">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="1680">
+              <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -183,6 +185,8 @@
       <find>new LidarEdgeAnalyticCostFunction(curr_poin</find>
       <find>LidarPlaneAnalyticCostFunction</find>
       <find>parameterblock</find>
+      <find>todo</find>
+      <find>class LidarEdgeAnalyticCostFunction : public ceres::SizedCostFunction</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -225,7 +229,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../chapter4/catkin_ws" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -915,16 +919,19 @@
       <workItem from="1622341875201" duration="10180000" />
       <workItem from="1622938658740" duration="319000" />
       <workItem from="1628772862121" duration="1027000" />
+      <workItem from="1628814945811" duration="63000" />
+      <workItem from="1629098033720" duration="671000" />
+      <workItem from="1629099881717" duration="44000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24085000" />
+    <option name="totallyTimeSpent" value="24863000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13507505" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14007781" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -935,7 +942,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.103296705" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.103296705" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.48418757" />
@@ -956,27 +963,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/lidar_localization/src/aloam_mapping_node.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18445">
+          <caret line="527" column="21" selection-start-line="527" selection-start-column="21" selection-end-line="527" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file:///usr/local/include/ceres/sized_cost_function.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="1680">
+          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lidar_localization/include/lidar_localization/models/loam/aloam_factor.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="39" column="73" lean-forward="true" selection-start-line="39" selection-start-column="73" selection-end-line="39" selection-end-column="73" />
+        <state relative-caret-position="229">
+          <caret line="85" column="7" selection-start-line="85" selection-start-column="7" selection-end-line="85" selection-end-column="7" />
           <folding>
             <element signature="e#309#334#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lidar_localization/src/aloam_mapping_node.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="571" column="31" selection-start-line="571" selection-start-column="31" selection-end-line="571" selection-end-column="31" />
         </state>
       </provider>
     </entry>

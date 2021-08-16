@@ -83,7 +83,7 @@ public:
  
 	}
 
-protected:
+private:
 	Eigen::Vector3d curr_point, last_point_a, last_point_b;
 	double s;
 };

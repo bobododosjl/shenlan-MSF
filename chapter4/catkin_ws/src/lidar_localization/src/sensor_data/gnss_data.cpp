@@ -3,6 +3,7 @@
  * @Author: Ren Qian
  * @Date: 2020-02-06 20:42:23
  */
+#include <iostream>
 #include "lidar_localization/sensor_data/gnss_data.hpp"
 
 #include "glog/logging.h"
@@ -16,11 +17,20 @@ GeographicLib::LocalCartesian lidar_localization::GNSSData::geo_converter;
 
 namespace lidar_localization {
 void GNSSData::InitOriginPosition() {
-    geo_converter.Reset(latitude, longitude, altitude);
+    std::cout << "GNSS Data:" << std::endl;
+    std::cout << "Latitude:" << latitude << std::endl;
+    std::cout << "Longitude:" << longitude << std::endl;
+    std::cout << "Altitude:" << altitude << std::endl;
+    geo_converter.Reset(48.9827, 8.39046, 116.396);
 
     origin_longitude = longitude;
     origin_latitude = latitude;
     origin_altitude = altitude;
+
+    std::cout << "origin_GNSS Data:" << std::endl;
+    std::cout << "Latitude:" << origin_latitude << std::endl;
+    std::cout << "Longtitude:" << origin_longitude << std::endl;
+    std::cout << "Altitude:" << origin_altitude << std::endl;
 
     origin_position_inited = true;
 }

@@ -194,3 +194,82 @@ rosbag play xxx.bag -s 100
 
 ## *GNSS通过下面代码实现：*
 
+#### 首先调用SetGNSSPose():
+
+```c++
+bool MatchingFlow::UpdateMatching() {
+    if (!matching_ptr_->HasInited()) {
+    
+        matching_ptr_->SetGNSSPose(current_gnss_data_.pose);        
+        // matching_ptr_->SetScanContextPose(current_cloud_data_);
+        
+    }
+
+    return matching_ptr_->Update(current_cloud_data_, laser_odometry_);
+}
+```
+
+#### 然后修改gnss_data.cpp文件，fix初始化点的经纬度：
+
+```c++
+//静态成员变量必须在类外初始化
+double lidar_localization::GNSSData::origin_longitude = 0.0;
+double lidar_localization::GNSSData::origin_latitude = 0.0;
+double lidar_localization::GNSSData::origin_altitude = 0.0;
+bool lidar_localization::GNSSData::origin_position_inited = false;
+GeographicLib::LocalCartesian lidar_localization::GNSSData::geo_converter;
+
+namespace lidar_localization {
+void GNSSData::InitOriginPosition() {
+    std::cout << "GNSS Data: " << std::endl;
+    std::cout << "Latitude: " << latitude << std::endl;
+    std::cout << "Longitude: " << longitude <<  std::endl;
+    std::cout << "Altitude: " << altitude << std::endl << std::endl;
+    geo_converter.Reset(48.9827, 8.39046, 116.396);
+
+    origin_longitude = latitude;
+    origin_latitude = longitude;
+    origin_altitude = altitude;
+
+    std::cout << "origin_GNSS Data: " << std::endl;
+    std::cout << "Latitude: " << origin_longitude << std::endl;
+    std::cout << "Longitude: " << origin_latitude <<  std::endl;
+    std::cout << "Altitude: " << origin_altitude << std::endl;
+
+    origin_position_inited = true;
+}
+```
+
+#### 0s
+
+#### 全局：
+
+![image-20210816204435110](../../images/image-20210816204435110.png)
+
+#### 100s
+
+#### 全局：
+
+![image-20210816205402225](../../images/image-20210816205402225.png)
+
+#### 轨迹：
+
+![image-20210816210339142](../../images/image-20210816210339142.png)
+
+#### 200s
+
+#### 轨迹：
+
+![image-20210816211406833](../../images/image-20210816211406833.png)
+
+#### 300s
+
+#### 轨迹：
+
+![image-20210816212301454](../../images/image-20210816212301454.png)
+
+#### 400s
+
+#### 轨迹：
+
+![image-20210816212723743](../../images/image-20210816212723743.png)
