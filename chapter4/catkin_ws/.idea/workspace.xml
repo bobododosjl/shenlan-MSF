@@ -10,15 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12e202ab-6b35-45c7-9062-063dd97cc40d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../chapter3/catkin_ws2/.catkin_tools/profiles/default/devel_collisions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter3/catkin_ws2/.catkin_tools/profiles/default/devel_collisions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../chapter3/catkin_ws2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter3/catkin_ws2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../chapter3/catkin_ws2/src/lidar_localization/include/lidar_localization/models/loam/aloam_factor.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter3/catkin_ws2/src/lidar_localization/include/lidar_localization/models/loam/aloam_factor.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../chapter3/homework/homework.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter3/homework/homework.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.catkin_tools/profiles/default/devel_collisions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.catkin_tools/profiles/default/devel_collisions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lidar_localization/src/matching/matching_flow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lidar_localization/src/matching/matching_flow.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lidar_localization/src/sensor_data/gnss_data.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lidar_localization/src/sensor_data/gnss_data.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework/homework.md" beforeDir="false" afterPath="$PROJECT_DIR$/../homework/homework.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter6/homework/homework.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter6/homework/homework.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/src/lidar_localization/cmake-build-debug/" />
     <ignored path="/usr/src/googletest/googletest/CMakeFiles/" />
@@ -56,7 +48,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lidar_localization/config/matching/matching.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-910">
+            <state relative-caret-position="245">
               <caret line="7" column="62" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="62" />
             </state>
           </provider>
@@ -65,7 +57,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lidar_localization/src/matching/matching_flow.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
+            <state relative-caret-position="490">
               <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
             </state>
           </provider>
@@ -94,9 +86,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="436">
               <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-              <folding>
-                <element signature="e#76#95#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -175,7 +164,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../chapter6/catkin_ws" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -216,16 +205,17 @@
       <workItem from="1629099927768" duration="1445000" />
       <workItem from="1629102279662" duration="275000" />
       <workItem from="1629115900926" duration="4855000" />
+      <workItem from="1629182034313" duration="20000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31521000" />
+    <option name="totallyTimeSpent" value="31541000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19788772" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20066704" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -239,7 +229,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.37582418" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="CMake" order="11" visible="true" weight="0.32747254" />
+      <window_info anchor="bottom" id="CMake" order="11" visible="true" weight="0.32967034" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -263,6 +253,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lidar_localization/config/matching/matching.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="7" column="62" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lidar_localization/src/matching/matching_flow.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -292,20 +296,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lidar_localization/config/mapping/back_end.yaml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lidar_localization/config/matching/matching.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-910">
-          <caret line="7" column="62" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lidar_localization/src/matching/matching_flow.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lidar_localization/src/sensor_data/gnss_data.cpp">
       <provider selected="true" editor-type-id="text-editor">

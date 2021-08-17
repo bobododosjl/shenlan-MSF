@@ -115,3 +115,34 @@ velocity_delta = delta_t*linear_acc_curr; // 欧拉法
 #### 红色为groundtruth，蓝色为算法解算得到的轨迹，可以看出中值法精度更好。
 
 ## 3）优秀
+
+
+
+
+
+## 附加题
+
+#### RK4积分相当于将区间用4个导数组合来代替欧拉法的斜率，分别是区间起点，中间点两种斜率，以及区间结束点斜率。
+
+![image-20210817112940186](../../images/image-20210817112940186.png)
+
+#### 对应程序有，$\mathrm{dp} / \mathrm{dt}=\mathrm{f}(\mathrm{t}, \mathrm{p})=\mathrm{v}(\mathrm{t})$，$\mathrm{dv} / \mathrm{dt}=\mathrm{f}(\mathrm{t}, \mathrm{v})=\mathrm{a}(\mathrm{t})$，所以代入到RK4方程中有：
+
+$$
+\begin{array}{l}
+\mathrm{pk} 1=\mathrm{v} ; \\
+\mathrm{pk} 2=\mathrm{v}+0.5^{*} \mathrm{~d} \mathrm{t}^{*} \mathrm{vk} 1 \\
+\mathrm{pk} 3=\mathrm{v}+0.5^{*} \mathrm{dt}^{*} \mathrm{vk} 2 \\
+\mathrm{pk} 4=\mathrm{v}+\mathrm{dt}^{*} \mathrm{vk} 3
+\end{array}
+$$
+
+$$
+\begin{array}{l}
+v k 1=a 0 ;\\
+\text { vk } 2=\text { a_mid; }\\
+\mathrm{vk} 3=\mathrm{vk} 2=\text { a_mid; }\\
+v k 4=a 1
+\end{array}
+$$
+
