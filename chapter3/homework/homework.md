@@ -121,7 +121,7 @@ problem.AddResidualBlock(cost_function, loss_function, para_q, para_t);
 #### *Ceres解析求导：面特征残差*
 
 ```c++
-// PlaneAnalyticCostFunction
+/// PlaneAnalyticCostFunction
 class LidarPlaneAnalyticCostFunction : public ceres::SizedCostFunction<1, 4, 3> {
 public:
     LidarPlaneAnalyticCostFunction(Eigen::Vector3d curr_point_, Eigen::Vector3d last_point_j_,
