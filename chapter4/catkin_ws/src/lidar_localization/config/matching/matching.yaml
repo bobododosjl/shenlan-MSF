@@ -1,8 +1,8 @@
 # data storage:
 # a. scan context:
-scan_context_path: /home/bobododo/GNC/MSF/shenlan-MSF/chapter4/catkin_ws/src/lidar_localization/slam_data/scan_context
+scan_context_path: /home/bobododo/GNC/shenlan-MSF-master/chapter4/catkin_ws/src/lidar_localization/slam_data/scan_context
 # b. global map:
-map_path: /home/bobododo/GNC/MSF/shenlan-MSF/chapter4/catkin_ws/src/lidar_localization/slam_data/map/filtered_map.pcd
+map_path: /home/bobododo/GNC/shenlan-MSF-master/chapter4/catkin_ws/src/lidar_localization/slam_data/map/filtered_map.pcd
 
 # 回环检测:
 loop_closure_method: scan_context # 选择回环检测方法, 目前支持scan_context

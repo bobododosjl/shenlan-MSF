@@ -123,6 +123,9 @@ bool BackEndFlow::UpdateBackEnd() {
         odometry_inited = true;
         // lidar odometry frame in map frame:
         odom_init_pose = current_gnss_pose_data_.pose * current_laser_odom_data_.pose.inverse();
+        std::cout << current_gnss_pose_data_.pose << std::endl;
+        std::cout << current_laser_odom_data_.pose << std::endl;
+        std::cout << odom_init_pose << std::endl;
     }
     // current lidar odometry in map frame:
     current_laser_odom_data_.pose = odom_init_pose * current_laser_odom_data_.pose;

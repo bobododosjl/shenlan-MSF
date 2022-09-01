@@ -1,2 +1,3 @@
 /home/bobododo/GNC/MSF/shenlan-MSF/chapter7/catkin_ws/devel/./cmake.lock 7
 /home/bobododo/GNC/MSF/chapter7/catkin_ws/devel/./cmake.lock 6
+/home/bobododo/GNC/shenlan-MSF-master/chapter7/catkin_ws/devel/./cmake.lock 1

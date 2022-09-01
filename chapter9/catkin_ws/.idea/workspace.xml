@@ -9,13 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c0770fa-9bd1-40ba-9ad6-765a9013343a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../chapter2/catkin_ws/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter2/catkin_ws/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../chapter4/catkin_ws/.catkin_tools/profiles/default/devel_collisions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter4/catkin_ws/.catkin_tools/profiles/default/devel_collisions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../chapter4/catkin_ws/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter4/catkin_ws/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../chapter7/catkin_ws/.catkin_tools/profiles/default/devel_collisions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter7/catkin_ws/.catkin_tools/profiles/default/devel_collisions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../chapter7/catkin_ws/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter7/catkin_ws/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0c0770fa-9bd1-40ba-9ad6-765a9013343a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/src/lidar_localization/cmake-build-debug/" />
     <ignored path="/usr/src/googletest/googletest/CMakeFiles/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,15 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lidar_localization/src/models/pre_integrator/imu_pre_integrator.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2975">
-              <caret line="85" column="22" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lidar_localization/include/lidar_localization/models/graph_optimizer/g2o/vertex/vertex_prvag.hpp">
           <provider selected="true" editor-type-id="text-editor">
@@ -98,9 +83,28 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lidar_localization/config/mapping/lio_back_end.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+            <state relative-caret-position="420">
+              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lidar_localization/launch/lio_mapping.launch">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lidar_localization/config/mapping/front_end.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-581" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lidar_localization/config/mapping/back_end.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-511" />
           </provider>
         </entry>
       </file>
@@ -149,76 +153,57 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="lidar_localization" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catkin_ws" type="47feb1d3:ProjectViewModuleNode" />
-            </path>
-            <path>
-              <item name="lidar_localization" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catkin_ws" type="47feb1d3:ProjectViewModuleNode" />
               <item name="catkin_ws" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lidar_localization" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catkin_ws" type="47feb1d3:ProjectViewModuleNode" />
               <item name="catkin_ws" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lidar_localization" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catkin_ws" type="47feb1d3:ProjectViewModuleNode" />
               <item name="catkin_ws" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="lidar_localization" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lidar_localization" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catkin_ws" type="47feb1d3:ProjectViewModuleNode" />
               <item name="catkin_ws" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="lidar_localization" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lidar_localization" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catkin_ws" type="47feb1d3:ProjectViewModuleNode" />
               <item name="catkin_ws" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="lidar_localization" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="lidar_localization" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="mapping" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lidar_localization" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catkin_ws" type="47feb1d3:ProjectViewModuleNode" />
               <item name="catkin_ws" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="lidar_localization" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="lidar_localization" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lidar_localization" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catkin_ws" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="catkin_ws" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lidar_localization" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="launch" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../chapter10/catkin_ws" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../chapter4/catkin_ws" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -261,16 +246,18 @@
       <workItem from="1627955863206" duration="33000" />
       <workItem from="1628062520633" duration="409000" />
       <workItem from="1628498955443" duration="24000" />
+      <workItem from="1661322751463" duration="2340000" />
+      <workItem from="1661392581050" duration="1672000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32703000" />
+    <option name="totallyTimeSpent" value="36715000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15175097" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15619789" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -282,7 +269,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32967034" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3010989" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.45384616" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -361,10 +348,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/lidar_localization/launch/lio_mapping.launch">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lidar_localization/config/mapping/front_end.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-581" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lidar_localization/config/mapping/back_end.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-511" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lidar_localization/config/mapping/lio_back_end.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state relative-caret-position="420">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
         </state>
       </provider>
     </entry>

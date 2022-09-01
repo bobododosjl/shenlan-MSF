@@ -38,11 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lidar_localization/src/apps/kitti_filtering_node.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
+            <state relative-caret-position="257">
               <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-              <folding>
-                <element signature="e#107#127#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -121,119 +118,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="lidar_localization" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catkin_ws4" type="47feb1d3:ProjectViewModuleNode" />
-            </path>
-            <path>
-              <item name="lidar_localization" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catkin_ws4" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="catkin_ws4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lidar_localization" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catkin_ws4" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="catkin_ws4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lidar_localization" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catkin_ws4" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="catkin_ws4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lidar_localization" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lidar_localization" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catkin_ws4" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="catkin_ws4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lidar_localization" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lidar_localization" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catkin_ws4" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="catkin_ws4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lidar_localization" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="filtering" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lidar_localization" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catkin_ws4" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="catkin_ws4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lidar_localization" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lidar_localization" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catkin_ws4" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="catkin_ws4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lidar_localization" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="lidar_localization" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lidar_localization" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catkin_ws4" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="catkin_ws4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lidar_localization" type="462c0819:PsiDirectoryNode" />
-              <item name="launch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lidar_localization" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catkin_ws4" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="catkin_ws4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lidar_localization" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lidar_localization" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catkin_ws4" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="catkin_ws4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lidar_localization" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="data_pretreat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lidar_localization" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catkin_ws4" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="catkin_ws4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lidar_localization" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mapping" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lidar_localization" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catkin_ws4" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="catkin_ws4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lidar_localization" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../SLAM/slam/catkin_ws3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../chapter9/catkin_ws" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -262,16 +154,18 @@
       <workItem from="1628685359317" duration="952000" />
       <workItem from="1628687211270" duration="1502000" />
       <workItem from="1628738203039" duration="112000" />
+      <workItem from="1661312757166" duration="625000" />
+      <workItem from="1661322727486" duration="18000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2566000" />
+    <option name="totallyTimeSpent" value="3209000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25625348" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2634797" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -282,10 +176,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33186814" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33406594" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="CMake" order="11" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.32967034" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -296,16 +190,8 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/lidar_localization/cmake-build-debug/include/lidar_localization/global_defination/global_defination.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lidar_localization/cmake-build-debug/catkin_generated/lidar_localization-msg-extras.cmake.develspace.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="1" column="414" selection-start-line="1" selection-start-column="414" selection-end-line="1" selection-end-column="414" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lidar_localization/cmake-build-debug/include/lidar_localization/global_defination/global_defination.h" />
+    <entry file="file://$PROJECT_DIR$/src/lidar_localization/cmake-build-debug/catkin_generated/lidar_localization-msg-extras.cmake.develspace.in" />
     <entry file="file://$PROJECT_DIR$/src/lidar_localization/src/data_pretreat/data_pretreat_flow.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5749">
@@ -346,11 +232,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lidar_localization/src/apps/kitti_filtering_node.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
+        <state relative-caret-position="257">
           <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-          <folding>
-            <element signature="e#107#127#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
