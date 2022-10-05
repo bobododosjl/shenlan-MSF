@@ -40,7 +40,7 @@
 
 ![image-20210518152610472](../../images/image-20210518152610472.png)
 
-#### 主要命令：
+#### 主要命令如下：
 
 ```bash
 roslaunch lidar_localization mapping.launch
